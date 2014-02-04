@@ -1,0 +1,1 @@
+flashlight name:string price:integer serie:string lumens:integer description:text

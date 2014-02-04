@@ -1,0 +1,37 @@
+<%= form_for(@flashlight) do |f| %>
+  <% if @flashlight.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@flashlight.errors.count, "error") %> prohibited this flashlight from being saved:</h2>
+
+      <ul>
+      <% @flashlight.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :serie %><br>
+    <%= f.text_field :serie %>
+  </div>
+  <div class="field">
+    <%= f.label :lumens %><br>
+    <%= f.number_field :lumens %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
