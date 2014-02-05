@@ -1,1 +1,3 @@
-si hay problemas con v8 en bundles usar gem install libv8 -v '3.16.14.3' -- --with-system-v8
+http://alademann.github.io/sass-bootstrap/
+
+http://getbootstrap.com/2.3.2/index.html
