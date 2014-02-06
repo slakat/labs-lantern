@@ -15,7 +15,7 @@
 
 #footer
 {
-	position: absolute;
+	
     height: 100px;
     bottom: 0px;
     width: 100%;
@@ -24,8 +24,17 @@
 #tarjetasContainer
 {
 	float:right;
+	max-width: 45%;
 }
 #datosContainer
 {
 	float:left;
+	max-width: 45%;
+}
+#datosContainer p
+{
+	color: #fff;
+	line-height: 132%;
+	margin: 0.5%;
+	font-size: 74%;
 }

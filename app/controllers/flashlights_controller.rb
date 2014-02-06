@@ -11,7 +11,7 @@ class FlashlightsController < ApplicationController
   # GET /flashlights/1.json
   def show
   end
-
+  
   # GET /flashlights/new
   def new
     @flashlight = Flashlight.new
