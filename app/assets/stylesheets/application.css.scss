@@ -12,3 +12,20 @@
  *= require_tree .
  */
 @import "bootstrap";
+
+#footer
+{
+	position: absolute;
+    height: 100px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #000;
+}
+#tarjetasContainer
+{
+	float:right;
+}
+#datosContainer
+{
+	float:left;
+}
