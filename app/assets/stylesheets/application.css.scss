@@ -21,6 +21,7 @@
     bottom: 0px;
     width: 100%;
     background-color: $color1;
+    overflow: hidden;
 }
 
 
@@ -42,4 +43,25 @@ address p:nth-child(4)
 	color:$color3;
 	font-style: italic;
 	margin-top: 0.5%
+}
+#bannerInferior
+{
+	margin:0px;
+}
+#bannerInferior img 
+{
+	display:block;
+	max-height: 10%;
+	height: auto;
+	min-height: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#relleno
+{	
+	@if 100%-65px-100px>0
+	{
+		height: 100px;
+	}
+	
 }
