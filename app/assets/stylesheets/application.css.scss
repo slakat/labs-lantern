@@ -12,29 +12,34 @@
  *= require_tree .
  */
 @import "bootstrap";
+@import "paleta";
 
 #footer
 {
-	
+	padding-top: 5px;
     height: 100px;
     bottom: 0px;
     width: 100%;
-    background-color: #000;
+    background-color: $color1;
 }
-#tarjetasContainer
+
+
+.imgDer
 {
-	float:right;
-	max-width: 45%;
+	float: left;
 }
-#datosContainer
+
+address p
 {
-	float:left;
-	max-width: 45%;
+	font-size: 80%;
+	padding: 0.1%;
+	margin: 0;
+	color:$color5;
+	text-align: center;
 }
-#datosContainer p
+address p:nth-child(4)
 {
-	color: #fff;
-	line-height: 132%;
-	margin: 0.5%;
-	font-size: 74%;
+	color:$color3;
+	font-style: italic;
+	margin-top: 0.5%
 }

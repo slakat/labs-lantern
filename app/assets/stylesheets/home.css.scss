@@ -1,10 +1,52 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "paleta";
+
+
+
+#destacados 
+{
+	background-color: $color1;
+	padding: 0px
+}
+
+#destacados > div.row:first-child
+{
+	background-color: $color2;
+	margin: 0px;
+	color: $color5;
+	font-size: 10px;
+	padding: 10px;
+	font-style: italic;
+	height: 12%;
+}
+
+#destacados
+{
+	height: 60%;
+}
+#destacados > div.row:nth-child(n+2)
+{
+	margin: 10px;
+	color: $color4;
+}
 #carouselContainer
 {
+	display: block;
 	padding-right: 13%;
 	padding-left: 13%;
 	padding-top: 1%;
+	padding-bottom: 5%;
+	height: 60%;
 	
+}
+
+#carouselContainer img
+{
+	display:block;
+	max-height: 60%;
+	height: auto;
+
+
 }
