@@ -2,3 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+@import "paleta";
+
+#theBlackOne
+{
+	background: $color1;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -50px;
+	padding-top: 50px;
+
+}
+
+#myCarousel2 .item .row .row:nth-child(odd)
+{
+	text-align: center;
+}
+#myCarousel2 .item .row .row:nth-child(1)
+{
+	color:$color2;
+	font-style: italic;
+	font-weight: bold; 
+
+}
+#myCarousel2 .item .row .row:nth-child(2)
+{
+	
+}
+#myCarousel2 .item .row .row:nth-child(3)
+{
+	
+	color:$color4 dashed;
+	border-top: 2px dashed $color4;
+	border-bottom: 2px dashed $color4;
+}
