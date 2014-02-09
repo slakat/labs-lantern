@@ -15,14 +15,13 @@ background-image: -webkit-gradient(
   right top,
   left top,
   color-stop(0.7, #C0C1C2),
-  color-stop(1, #FFFFFF)
+  color-stop(1, #27292B)
 );
-background-image: -o-linear-gradient(left, #C0C1C2 70%, #FFFFFF 100%);
-background-image: -moz-linear-gradient(left, #C0C1C2 70%, #FFFFFF 100%);
-background-image: -webkit-linear-gradient(left, #C0C1C2 70%, #FFFFFF 100%);
-background-image: -ms-linear-gradient(left, #C0C1C2 70%, #FFFFFF 100%);
-background-image: linear-gradient(to left, #C0C1C2 70%, #FFFFFF 100%);
-
+background-image: -o-linear-gradient(left, #C0C1C2 70%, #27292B 100%);
+background-image: -moz-linear-gradient(left, #C0C1C2 70%, #27292B 100%);
+background-image: -webkit-linear-gradient(left, #C0C1C2 70%, #27292B 50%);
+background-image: -ms-linear-gradient(left, #C0C1C2 70%, #27292B 100%);
+background-image: linear-gradient(to left, #C0C1C2 70%, #27292B 100%);
 
 }
 
