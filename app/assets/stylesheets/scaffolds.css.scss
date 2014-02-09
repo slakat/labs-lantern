@@ -2,13 +2,30 @@
 @import "paleta";
 
 body {
-  background-color: $color3;
+  //background-color: $color3;
   color: $color4;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding-top: 55px;
+ 
+
+background-image: -webkit-gradient(
+  linear,
+  right top,
+  left top,
+  color-stop(0.7, #C0C1C2),
+  color-stop(1, #FFFFFF)
+);
+background-image: -o-linear-gradient(left, #C0C1C2 70%, #FFFFFF 100%);
+background-image: -moz-linear-gradient(left, #C0C1C2 70%, #FFFFFF 100%);
+background-image: -webkit-linear-gradient(left, #C0C1C2 70%, #FFFFFF 100%);
+background-image: -ms-linear-gradient(left, #C0C1C2 70%, #FFFFFF 100%);
+background-image: linear-gradient(to left, #C0C1C2 70%, #FFFFFF 100%);
+
+
 }
+
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
