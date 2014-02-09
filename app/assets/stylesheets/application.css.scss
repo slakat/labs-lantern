@@ -14,7 +14,17 @@
 @import "bootstrap";
 @import "paleta";
 
-#footer
+#nav{
+	line-height: 150%;
+	padding: 15px 10px;
+}
+
+.container{
+	margin-top: 100px;
+}
+
+
+.footer
 {
 	padding-top: 5px;
     height: 100px;
@@ -86,6 +96,7 @@ address p:nth-child(4)
 	max-width: 60%;
 	margin-top: 3px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 .button:hover
@@ -106,4 +117,9 @@ address p:nth-child(4)
 #cards{
 	margin:0 auto;
 	margin-top: 2%;
+}
+
+.fenix {
+	min-height: 70px;
+	
 }
