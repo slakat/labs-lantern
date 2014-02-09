@@ -28,6 +28,12 @@
 .imgDer
 {
 	float: left;
+	min-height: 60px;
+}
+
+.logos
+{
+	margin-top: 2%;
 }
 
 address p
@@ -53,9 +59,10 @@ address p:nth-child(4)
 	display:block;
 	max-height: 10%;
 	height: auto;
-	min-height: 10%;
+	/*min-height: 10%;*/
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 5px;
 }
 #relleno
 {	
@@ -64,4 +71,39 @@ address p:nth-child(4)
 		height: 100px;
 	}
 	
+}
+
+
+
+.button{
+	background-color: $color2;
+	position: relative;
+	border-radius: 10px;
+	padding: 10px;
+	color: $color5;
+	margin: 0 auto;
+	display: block;
+	max-width: 60%;
+	margin-top: 3px;
+	margin-bottom: 50px;
+}
+
+.button:hover
+{
+	color: $color5;
+	background-color: $color1; 
+	text-decoration: none;
+}
+
+#cards .button{
+	float:left;
+	background-color: $color1;
+	margin-top: 0;
+	padding: 10px;
+	font-size: 14px;
+}
+
+#cards{
+	margin:0 auto;
+	margin-top: 2%;
 }
