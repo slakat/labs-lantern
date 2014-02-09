@@ -19,6 +19,12 @@
 	padding: 15px 10px;
 }
 
+.container-group{
+	max-width: 1300px;
+	width: auto;
+	margin: 0 auto;
+}
+
 .container{
 	margin-top: 100px;
 }
@@ -26,6 +32,7 @@
 
 .footer
 {
+	background: url("bg-gray.jpg");
 	padding-top: 5px;
     height: 100px;
     bottom: 0px;
@@ -111,7 +118,7 @@ address p:nth-child(4)
 	background-color: $color1;
 	margin-top: 0;
 	padding: 10px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 #cards{
@@ -121,5 +128,5 @@ address p:nth-child(4)
 
 .fenix {
 	min-height: 70px;
-	
+
 }
