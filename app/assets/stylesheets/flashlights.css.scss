@@ -42,6 +42,12 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
 	background-color:#dfdfdf;
 }
+.botonSerie p.active {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, $color2), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, $color2 5%, #ededed 100% );
+	
+	background-color:$color2;
+}
 .botonHumano
 {
 	margin-top: 30px;
@@ -94,4 +100,10 @@
 	max-height: 60%;
 	height: auto;
 	width: auto;
+}
+
+
+#lBK , #lRC , #lHL
+{
+	visibility: hidden;
 }

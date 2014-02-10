@@ -5,16 +5,20 @@ function changeActive()
 {	
 	var activeHumano;
 	var activeSerie;
-	$("#butonBike").on("click", bikePress);
-	$("#butonBK").on("click", bikePress);
+	var mostrar=$("#inicial");
+	$("#butonBike").on("click", bikePress1);
+	$("#butonBK").on("click", bikePress1);
+	$("#butonRecargables").on("click", bikePress2);
+	$("#butonRC").on("click", bikePress2);
+	$("#butonFrontales").on("click", bikePress3);
+	$("#butonHL").on("click", bikePress3);
 	
 }
 
-function bikePress()
+function bikePress1()
 {
 	if(typeof(activeHumano) !== "undefined" && activeHumano !== null)
 	{
-		alert("Hello");
 		activeHumano.removeClass("active");
 		activeHumano=null;
 	}
@@ -29,6 +33,59 @@ function bikePress()
 
 	$("#butonBK").addClass("active");
 	activeSerie=$("#butonBK");
+	mostrar.toggle()
+	mostrar=$("lBK");
+
+
+}
+
+function bikePress2()
+{
+	if(typeof(activeHumano) !== "undefined" && activeHumano !== null)
+	{
+		activeHumano.removeClass("active");
+		activeHumano=null;
+	}
+	if(typeof(activeSerie) !== "undefined" && activeSerie !== null)
+	{
+		activeSerie.removeClass("active");
+		activeSerie=null;
+	}
+	
+	$("#butonRecargables").addClass("active");
+	activeHumano=$("#butonRecargables");
+
+	$("#butonRC").addClass("active");
+	activeSerie=$("#butonRC");
+
+	mostrar.toggle()
+	mostrar=$("lRC");
+
+
+}
+
+function bikePress3()
+{
+	if(typeof(activeHumano) !== "undefined" && activeHumano !== null)
+	{
+		activeHumano.removeClass("active");
+		activeHumano=null;
+	}
+	if(typeof(activeSerie) !== "undefined" && activeSerie !== null)
+	{
+		activeSerie.removeClass("active");
+		activeSerie=null;
+	}
+	
+	$("#butonFrontales").addClass("active");
+	activeHumano=$("#butonFrontales");
+
+	$("#butonHL").addClass("active");
+	activeSerie=$("#butonHL");
+
+	mostrar.toggle()
+	mostrar=$("lHL");
+
 
 }
 
