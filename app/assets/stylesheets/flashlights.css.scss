@@ -42,9 +42,14 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
 	background-color:#dfdfdf;
 }
+.botonHumano
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 .botonHumano img
 {
-	background-color: $color1;
+	background-color: $color4;
 	border-radius: 100%;
 }
 .botonHumano img.active
@@ -52,12 +57,26 @@
 	background-color: $color2;
 	
 }
-#mainFrame
+#mainFrame .row:first-child
 {
 	
-	
+	margin-bottom: 30px;
 	background-color: $color1;
+
 	
+}
+#mainFrame .row:first-child p
+{
+	
+	padding-top:30px;
+
+	
+}
+#mainFrame .row:first-child h5
+{
+	
+	padding-top:60px;
+	font-weight: bold;
 	
 }
 #mainFrame img
