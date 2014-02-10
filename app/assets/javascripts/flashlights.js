@@ -1,11 +1,12 @@
 
-
+var mostrar=$("#inicial");
+var activeHumano;
+var activeSerie;
 
 function changeActive()
 {	
-	var activeHumano;
-	var activeSerie;
-	var mostrar=$("#inicial");
+	
+	
 	$("#butonBike").on("click", bikePress1);
 	$("#butonBK").on("click", bikePress1);
 	$("#butonRecargables").on("click", bikePress2);
@@ -33,8 +34,10 @@ function bikePress1()
 
 	$("#butonBK").addClass("active");
 	activeSerie=$("#butonBK");
-	mostrar.toggle()
-	mostrar=$("lBK");
+
+	mostrar.hide();
+	mostrar=$("#lBK");
+	mostrar.show();
 
 
 }
@@ -58,8 +61,9 @@ function bikePress2()
 	$("#butonRC").addClass("active");
 	activeSerie=$("#butonRC");
 
-	mostrar.toggle()
-	mostrar=$("lRC");
+	mostrar.hide();
+	mostrar=$("#lRC");
+	mostrar.show();
 
 
 }
@@ -83,8 +87,9 @@ function bikePress3()
 	$("#butonHL").addClass("active");
 	activeSerie=$("#butonHL");
 
-	mostrar.toggle()
-	mostrar=$("lHL");
+	mostrar.hide();
+	mostrar=$("#lHL");
+	mostrar.show();
 
 
 }
