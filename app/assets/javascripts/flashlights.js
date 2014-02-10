@@ -1,7 +1,6 @@
 
 
 
-
 function changeActive()
 {	
 	var activeHumano;
