@@ -16,16 +16,15 @@
 .description{
 		margin: 0 auto;
 		float: left;
-		padding-top: 5%;
 }
 
 #destacados 
 {
 	background: rgba(0, 0,0, .7);
 	padding: 0px;
-	border-radius: 50px 0 50px 50px ;
+	border-radius: 0px 50px 50px 50px ;
 	width: 100%;
-	margin-top: -13%;
+	margin-top: -9%;
 }
 
 #destacados > div.row:first-child
@@ -37,7 +36,7 @@
 	padding: 4px;
 	font-style: italic;
 	height: 12%;
-	float: right;
+	float: left;
 	width: 50%;
 	border-radius: 20px 20px 0 0;
 }
