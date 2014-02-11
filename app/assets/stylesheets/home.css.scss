@@ -4,22 +4,33 @@
 @import "paleta";
 
 
+.description{
+		margin: 0 auto;
+		float: left;
+		padding-top: 5%;
+}
 
 #destacados 
 {
-	background-color: $color1;
-	padding: 0px
+	background: rgba(0, 0,0, .7);
+	padding: 0px;
+	border-radius: 50px 0 50px 50px ;
+	width: 100%;
+	margin-top: -13%;
 }
 
 #destacados > div.row:first-child
 {
 	background-color: $color2;
-	margin: 0px;
+	margin: -2% 0;
 	color: $color5;
 	font-size: 10px;
-	padding: 10px;
+	padding: 4px;
 	font-style: italic;
 	height: 12%;
+	float: right;
+	width: 50%;
+	border-radius: 20px 20px 0 0;
 }
 
 #destacados img
@@ -40,11 +51,12 @@
 #carouselContainer
 {
 	display: block;
-	padding-right: 13%;
-	padding-left: 13%;
 	padding-top: 1%;
-	padding-bottom: 5%;
-	height: 55%;
+	padding-bottom: 1%;
+	max-width: 60%;
+	margin: 0 auto;
+	height: 400px;
+
 
 	
 }
