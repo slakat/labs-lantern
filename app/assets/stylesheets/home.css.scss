@@ -44,48 +44,33 @@
 #destacados img
 {
 	display:block;
-	height: 60px;
+	height: 80px;
 	margin: 10px;
 	
 }
 #destacados .oferta
 {
 	background-color: $color3;
-	height: 80px;
+	height: 100px;
 	margin: 15px;
 	margin-left: 50px;
 	margin-right: 50px;
-	width: 400px;
+	width: 90%;
+	float: left;
+	background-image: -o-linear-gradient(left, rgba(0, 0,0, .7) 0%, $color3 35%);
+background-image: -moz-linear-gradient(left, rgba(0, 0,0, .7) 0%, $color3 35%);
+background-image: -webkit-linear-gradient(left, rgba(0, 0,0, .7) 0%, $color3 35%);
+background-image: -ms-linear-gradient(left, rgba(0, 0,0, .7) 0%, $color3 35%);
+background-image: linear-gradient(to left, rgba(0, 0,0, .7) 0%, $color3 35%);
 
 }
-#destacados .oferta:nth-child(even)
-{
-	float: left;
-	-webkit-border-radius: 0px 40px  40px 0px;
-border-radius: 0px 40px 40px 0px;
-padding-right: 40px;
 
-}
-#destacados .oferta:nth-child(even) img
+
+#destacados  img
 {
 	float: left;
 }
-#destacados .oferta:nth-child(even) p
-{
-	float: right;
-}
-#destacados .oferta:nth-child(odd)
-{
-	float: right;
-	-webkit-border-radius: 40px 0px  0px 40px;
-border-radius: 40px 0px 0px 40px;
-padding-left: 50px;
-}
-#destacados .oferta:nth-child(odd) img
-{
-	float: right;
-}
-#destacados .oferta:nth-child(odd) p
+#destacados  p
 {
 	float: left;
 }
