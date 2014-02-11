@@ -73,7 +73,7 @@
 	border: 0px;
 	overflow: visible;
 	padding: 0px;
-	visibility: hidden;
+	display:none;
 
 }
 #mainFrame .row:first-child
@@ -125,8 +125,7 @@
 @media (max-width:500px){
 		#mainFrame .navbar
 	{
-		margin:10px;
-		visibility: visible;
+		display:block;
 		width: 100%;
 	}
 }
