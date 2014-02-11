@@ -72,7 +72,8 @@
 	width: 100%;
 	border: 0px;
 	overflow: visible;
-	padding: 0px
+	padding: 0px;
+	visibility: hidden;
 
 }
 #mainFrame .row:first-child
@@ -119,4 +120,13 @@
 #lBK , #lRC , #lHL
 {
 	display: none;
+}
+
+@media (max-width:500px){
+		#mainFrame .navbar
+	{
+		margin:10px;
+		visibility: visible;
+		width: 100%;
+	}
 }
