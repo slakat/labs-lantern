@@ -44,16 +44,50 @@
 #destacados img
 {
 	display:block;
-	max-height: 12%;
-	height: auto;
-	min-height: 12%;
-	margin-left: auto;
-	margin-right: auto;
-}
-#destacados > div.row:nth-child(n+2)
-{
+	height: 60px;
 	margin: 10px;
-	color: $color4;
+	
+}
+#destacados .oferta
+{
+	background-color: $color3;
+	height: 80px;
+	margin: 15px;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 400px;
+
+}
+#destacados .oferta:nth-child(even)
+{
+	float: left;
+	-webkit-border-radius: 0px 40px  40px 0px;
+border-radius: 0px 40px 40px 0px;
+padding-right: 40px;
+
+}
+#destacados .oferta:nth-child(even) img
+{
+	float: left;
+}
+#destacados .oferta:nth-child(even) p
+{
+	float: right;
+}
+#destacados .oferta:nth-child(odd)
+{
+	float: right;
+	-webkit-border-radius: 40px 0px  0px 40px;
+border-radius: 40px 0px 0px 40px;
+padding-left: 50px;
+}
+#destacados .oferta:nth-child(odd) img
+{
+	float: right;
+}
+#destacados .oferta:nth-child(odd) p
+{
+	float: left;
 }
 
 #carouselContainer
