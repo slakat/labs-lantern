@@ -1,24 +1,4 @@
-<div class="navbar navbar-inverse  " role="navigation">
-         
-            <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse2">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    
-            </div>
-            <div class="navbar-collapse2 collapse">
-                    <ul >
-                      <li class="active"><a href="#">Home</a></li>
-                      <li> <%= link_to 'Linternas', flashlights_path %></li>
-                      <li><a href="#about">Accesorio</a></li>
-                      <li><a href="#about">Emsa</a></li>
-                      <li><a href="#about">Contto</a></li>                      
-                    </ul>
-            </div>
-    </div>
+
 
 <div class="container-fluid">
 <!-- Circulos -->
@@ -57,7 +37,7 @@
 <!-- Cuadro central -->
 <div class="row">
   <!-- Series -->
-  <div class="col-md-2 col-md-offset-2 botonSerie">
+  <div class="col-md-2  botonSerie">
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
@@ -110,6 +90,31 @@
 
   </div>
   <!-- Linterna actual -->
+  <div class="col-md-9" id="mainFrame">
+    <div class="navbar navbar-inverse  " role="navigation">
+         
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse2">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+            </div>
+            <div class="navbar-collapse2 collapse">
+                    <ul >
+                      <li><a href="#about">Serie BK</a></li>
+                      <li><a href="#about">Serie RC</a></li>
+                      <li><a href="#about">Serie TK</a></li>  
+                      <li><a href="#about">Serie PD</a></li>  
+                      <li><a href="#about">Serie LD</a></li>  
+                      <li><a href="#about">Serie E</a></li>  
+                      <li><a href="#about">Frontales</a></li>  
+                      <li><a href="#about">Angulo</a></li>                      
+                    </ul>
+            </div>
+    </div>
   <div id="inicial">
   <%=render "inicial" %>
 </div>
@@ -126,6 +131,8 @@
 <div id="lHL">
   <%=render "linterna1_serie_hl" %>
   </div>
+
+</div>
   
   <!-- fin -->
 </div>

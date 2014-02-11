@@ -1,0 +1,32 @@
+@import "paleta";
+
+#blanket {
+background-color:#111;
+opacity: 0.65;
+filter:alpha(opacity=65);
+position:absolute;
+z-index: 9001;
+top:-200px;
+left:-1000px;
+width:300%;
+//height: 30000px;
+}
+#popUpDiv {
+position:absolute;
+background-color:#eeeeee;
+width:650px;
+height:550px;
+z-index: 9002;
+text-align: right;
+top: -200px;
+left: 200px;
+padding: 30px;
+padding-top: 230px;
+-webkit-border-radius: 30px;
+    
+    border-radius: 30px;
+}
+#pop-open
+{
+	color: $color2;
+}

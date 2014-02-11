@@ -30,7 +30,7 @@
 	font-size:19px;
 	font-weight:bold;
 	
-	height:51px;
+	height:40px;
 	line-height:51px;
 	width:129px;
 	
@@ -52,6 +52,7 @@
 {
 	margin-top: 30px;
 	margin-bottom: 30px;
+	width: 100%
 }
 .botonHumano img
 {
@@ -62,6 +63,17 @@
 {
 	background-color: $color2;
 	
+}
+#mainFrame .navbar
+{
+	margin:0px;
+	border-radius: 0px;
+	background-color: $color1;
+	width: 100%;
+	border: 0px;
+	overflow: visible;
+	padding: 0px
+
 }
 #mainFrame .row:first-child
 {
@@ -88,16 +100,17 @@
 #mainFrame img
 {
 	display: block;
-	min-height: 15%;
-	max-height: 15%;
+	min-height: 10%;
+	max-height: 10%;
 	height: auto;
 	width: auto;
+	margin: 10px;
 }
 #mainFrame .row:first-child img
 {
 	display: block;
-	min-height: 60%;
-	max-height: 60%;
+	min-height: 40%;
+	max-height: 40%;
 	height: auto;
 	width: auto;
 }
