@@ -23,12 +23,12 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a id="nav" class="navbar-brand" href="#">Linternas Tácticas</a>
+                    <%= link_to 'Linternas Tácticas', root_path, id:"nav", class: "navbar-brand" %>
                     <img  src="assets/fenix_logo-01.png" class="img-responsive" alt="Responsive image">
             </div>
             <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-right">
-                      <li class="active"><a href="#">Home</a></li>
+                      <li class="active"><%= link_to 'Home', root_path %></li>
                       <li> <%= link_to 'Linternas', flashlights_path %></li>
                       <li><a href="#about">Accesorios</a></li>
                       <li><a href="#about">Empresa</a></li>
