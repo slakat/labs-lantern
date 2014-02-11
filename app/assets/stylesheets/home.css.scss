@@ -57,11 +57,8 @@
 	margin-right: 50px;
 	width: 90%;
 	float: left;
-	background-image: -o-linear-gradient(left, rgba(0, 0,0, .7) 0%, $color3 35%);
-background-image: -moz-linear-gradient(left, rgba(0, 0,0, .7) 0%, $color3 35%);
-background-image: -webkit-linear-gradient(left, rgba(0, 0,0, .7) 0%, $color3 35%);
-background-image: -ms-linear-gradient(left, rgba(0, 0,0, .7) 0%, $color3 35%);
-background-image: linear-gradient(to left, rgba(0, 0,0, .7) 0%, $color3 35%);
+	
+	background-image: linear-gradient(transparent, transparent);
 
 }
 
