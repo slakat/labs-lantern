@@ -1,6 +1,10 @@
 class FlashlightsController < ApplicationController
   before_action :set_flashlight, only: [:show, :edit, :update, :destroy]
 
+  def indexSerie(val)
+    @flashlights=Flashlight.find_by_serie(val)
+  end
+
   # GET /flashlights
   # GET /flashlights.json
   def index

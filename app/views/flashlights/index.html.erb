@@ -138,13 +138,13 @@
 </div>
 </div>
 
-
-<!--<h1>Listing flashlights</h1>
+<div id="borrar">
+<h1>Listing flashlights</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>model</th>
       <th>Price</th>
       <th>Serie</th>
       <th>Lumens</th>
@@ -158,7 +158,7 @@
   <tbody>
     <% @flashlights.each do |flashlight| %>
       <tr>
-        <td><%= flashlight.name %></td>
+        <td><%= flashlight.model %></td>
         <td><%= flashlight.price %></td>
         <td><%= flashlight.serie %></td>
         <td><%= flashlight.lumens %></td>
@@ -174,4 +174,7 @@
 <br>
 
 <%= link_to 'New Flashlight', new_flashlight_path %>
--->
+
+<%=link_to 'algo', indexSerie_flashlight_path("tk")%>
+
+</div>
