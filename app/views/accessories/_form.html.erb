@@ -1,10 +1,10 @@
-<%= form_for @flashlight, :html =>{:multipart => true} do |f| %>
-  <% if @flashlight.errors.any? %>
+<%= form_for @accessory , :html =>{:multipart => true} do |f| %>
+  <% if @accessory.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@flashlight.errors.count, "error") %> prohibited this flashlight from being saved:</h2>
+      <h2><%= pluralize(@accessory.errors.count, "error") %> prohibited this accessory from being saved:</h2>
 
       <ul>
-      <% @flashlight.errors.full_messages.each do |msg| %>
+      <% @accessory.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -12,24 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :model %><br>
-    <%= f.text_field :model %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :price %><br>
     <%= f.number_field :price %>
   </div>
   <div class="field">
-    <%= f.label :serie %><br>
-    <%= f.text_field :serie %>
-  </div>
-  <div class="field">
-    <%= f.label :lumens %><br>
-    <%= f.number_field :lumens %>
-  </div>
-  <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+  <div class="field">
+    <%= f.label :compatible %><br>
+    <%= f.text_field :compatible %>
   </div>
 
   <div class="field">

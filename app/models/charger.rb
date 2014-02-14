@@ -1,4 +1,4 @@
-class Flashlight < ActiveRecord::Base
+class Charger < ActiveRecord::Base
 
 	mount_uploader :image , ImageUploader
 end

@@ -1,1 +1,3 @@
-flashlight name:string price:integer serie:string lumens:integer description:text
+flashlight (name:string) price:integer serie:string lumens:integer description:text || features:text model:string specifications:text
+charger name:string price:integer description:text features:text
+accessory name:string price:integer description:text features:text compatible:string

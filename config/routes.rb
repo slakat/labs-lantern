@@ -1,9 +1,18 @@
 LinTac::Application.routes.draw do
+  get "pages/contact"
+  get "pages/companies"
+  resources :accessories
+
+  resources :chargers
+
+  match '/send_mail', to: 'pages#send_mail', via: 'post'
+  match '/contact_succes', to: 'pages#contact_succes', via: 'get'
+  match '/index_serie', to: 'flashlights#index_serie', via: 'get'
+
   get "home/index"
   resources :flashlights 
 
-  
-
+  #get 'flashlight/indexSerie' to: 'flashlights#indexSerie'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

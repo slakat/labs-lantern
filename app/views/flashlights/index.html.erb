@@ -41,50 +41,50 @@
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p id="butonBK"> BK </p>
+         <%=link_to 'BK', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%> 
       </div>
     </div>
 
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p id="butonRC"> RC </p>
+        <%=link_to 'RC', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%> 
       </div>
     </div>
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p> TK </p>
+         <%=link_to 'TK', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%>
       </div>
     </div>
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p> PD </p>
+         <%=link_to 'PD', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%> 
       </div>
     </div>
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p> LD </p>
+         <%=link_to 'LD', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%> 
       </div>
     </div>
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p> E </p>
+        <%=link_to 'E', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%>
       </div>
     </div>
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p id="butonHL"> Frontales </p>
+         <%=link_to 'Frontales', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%> 
       </div>
     </div>
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <p> Angulo </p>
+         <%=link_to 'Angulos', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%> 
       </div>
     </div>
 
@@ -106,7 +106,7 @@
                     <ul >
                       <li><a href="#about">Serie BK</a></li>
                       <li><a href="#about">Serie RC</a></li>
-                      <li><a href="#about">Serie TK</a></li>  
+                      <li><%=link_to 'Serie TK', :controller => "flashlights", :action => "index_serie", :serie => "tk" , remote:true%></li>  
                       <li><a href="#about">Serie PD</a></li>  
                       <li><a href="#about">Serie LD</a></li>  
                       <li><a href="#about">Serie E</a></li>  
@@ -115,36 +115,58 @@
                     </ul>
             </div>
     </div>
-  <div id="inicial">
-  <%=render "inicial" %>
-</div>
-
-
-  <div id="lBK">
-  <%=render "linterna1_serie_bk" %>
-</div>
-
-  <div id="lRC">
-  <%=render "linterna1_serie_rc" %>
-  </div>
-
-<div id="lHL">
-  <%=render "linterna1_serie_hl" %>
-  </div>
+  
 
 </div>
   
+
+  <div class="row">
+      <div class="col-md-6">
+        <img  src="assets/lantern-big-01.png" class="img-responsive fenix " alt="Responsive image">
+      </div>
+      <div class="col-md-6">
+        <p id="description-frame">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+        <h5>Precio: 1000</h5>
+      </div>
+    </div>
+    <!-- Otras linterna -->
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1">
+          <img  src="assets/lantern-01.png" class="img-responsive fenix " alt="Responsive image">
+          <p>Bonita linterna de capacidad</p>
+      </div>
+       <div class="col-md-2">
+           <img  src="assets/lantern-01.png" class="img-responsive fenix " alt="Responsive image">
+           <p>Bonita linterna de capacidad</p>
+      </div>
+      <div class="col-md-2">
+           <img  src="assets/lantern-01.png" class="img-responsive fenix " alt="Responsive image">
+           <p>Bonita linterna de capacidad</p>
+      </div>
+      <div class="col-md-2">
+           <img  src="assets/lantern-01.png" class="img-responsive fenix " alt="Responsive image">
+           <p>Bonita linterna de capacidad</p>
+      </div>
+      <div class="col-md-2">
+           <img  src="assets/lantern-01.png" class="img-responsive fenix " alt="Responsive image">
+           <p>Bonita linterna de capacidad</p>
+      </div>
+    </div>
+
+
+
   <!-- fin -->
 </div>
 </div>
 
+<div id="borrar">
+<h1>Listing flashlights</h1>
 
-<!--<h1>Listing flashlights</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>model</th>
       <th>Price</th>
       <th>Serie</th>
       <th>Lumens</th>
@@ -158,7 +180,7 @@
   <tbody>
     <% @flashlights.each do |flashlight| %>
       <tr>
-        <td><%= flashlight.name %></td>
+        <td><%= flashlight.model %></td>
         <td><%= flashlight.price %></td>
         <td><%= flashlight.serie %></td>
         <td><%= flashlight.lumens %></td>
@@ -174,4 +196,7 @@
 <br>
 
 <%= link_to 'New Flashlight', new_flashlight_path %>
--->
+
+<%=link_to 'algo', :controller => "flashlights", :action => "index_serie", :serie => "tk" %>
+
+</div>

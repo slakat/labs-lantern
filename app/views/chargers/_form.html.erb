@@ -1,10 +1,10 @@
-<%= form_for @flashlight, :html =>{:multipart => true} do |f| %>
-  <% if @flashlight.errors.any? %>
+<%= form_for @charger , :html =>{:multipart => true} do |f| %>
+  <% if @charger.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@flashlight.errors.count, "error") %> prohibited this flashlight from being saved:</h2>
+      <h2><%= pluralize(@charger.errors.count, "error") %> prohibited this charger from being saved:</h2>
 
       <ul>
-      <% @flashlight.errors.full_messages.each do |msg| %>
+      <% @charger.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -12,27 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :model %><br>
-    <%= f.text_field :model %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :price %><br>
     <%= f.number_field :price %>
   </div>
   <div class="field">
-    <%= f.label :serie %><br>
-    <%= f.text_field :serie %>
-  </div>
-  <div class="field">
-    <%= f.label :lumens %><br>
-    <%= f.number_field :lumens %>
-  </div>
-  <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
-
   <div class="field">
+    <%= f.label :features %><br>
+    <%= f.text_area :features %>
+  </div>
+
+ <div class="field">
     <%= f.file_field :image%>
   </div>
 
@@ -40,7 +36,7 @@
     <%= f.label :remote_image_url , "Or add a url"%><br/>
     <%= f.text_field :remote_image_url%>
   </div>
-
+  
   <div class="actions">
     <%= f.submit %>
   </div>

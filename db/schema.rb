@@ -11,16 +11,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140204232614) do
+ActiveRecord::Schema.define(version: 20140214150347) do
+
+  create_table "accessories", force: true do |t|
+    t.string   "name"
+    t.integer  "price"
+    t.text     "description"
+    t.text     "features"
+    t.string   "compatible"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image"
+  end
+
+  create_table "chargers", force: true do |t|
+    t.string   "name"
+    t.integer  "price"
+    t.text     "description"
+    t.text     "features"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image"
+  end
 
   create_table "flashlights", force: true do |t|
-    t.string   "name"
+    t.string   "model"
     t.integer  "price"
     t.string   "serie"
     t.integer  "lumens"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "features"
+    t.text     "specifications"
+    t.string   "image"
   end
 
 end

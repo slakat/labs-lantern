@@ -1,6 +1,21 @@
 class FlashlightsController < ApplicationController
   before_action :set_flashlight, only: [:show, :edit, :update, :destroy]
 
+  def index_serie
+    
+    @flashlights=Flashlight.where(:serie=>params[:serie])
+    respond_to do |format|
+      format.html
+      {
+
+      }
+      format.js
+      {
+        
+      }
+    end
+  end
+
   # GET /flashlights
   # GET /flashlights.json
   def index
@@ -69,6 +84,6 @@ class FlashlightsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def flashlight_params
-      params.require(:flashlight).permit(:name, :price, :serie, :lumens, :description)
+      params.require(:flashlight).permit(:name, :price, :serie, :lumens, :description , :image)
     end
 end
