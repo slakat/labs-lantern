@@ -1,8 +1,19 @@
 class FlashlightsController < ApplicationController
   before_action :set_flashlight, only: [:show, :edit, :update, :destroy]
 
-  def indexSerie(val)
-    @flashlights=Flashlight.find_by_serie(val)
+  def index_serie
+    
+    @flashlights=Flashlight.where(:serie=>params[:serie])
+    respond_to do |format|
+      format.html
+      {
+
+      }
+      format.js
+      {
+        
+      }
+    end
   end
 
   # GET /flashlights

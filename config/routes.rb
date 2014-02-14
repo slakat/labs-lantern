@@ -7,6 +7,7 @@ LinTac::Application.routes.draw do
 
   match '/send_mail', to: 'pages#send_mail', via: 'post'
   match '/contact_succes', to: 'pages#contact_succes', via: 'get'
+  match '/index_serie', to: 'flashlights#index_serie', via: 'get'
 
   get "home/index"
   resources :flashlights 
