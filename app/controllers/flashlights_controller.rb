@@ -84,6 +84,6 @@ class FlashlightsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def flashlight_params
-      params.require(:flashlight).permit(:name, :price, :serie, :lumens, :description)
+      params.require(:flashlight).permit(:name, :price, :serie, :lumens, :description , :image)
     end
 end

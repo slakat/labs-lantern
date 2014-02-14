@@ -1,4 +1,4 @@
-<%= form_for(@flashlight) do |f| %>
+<%= form_for @flashlight, :html =>{:multipart => true} do |f| %>
   <% if @flashlight.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@flashlight.errors.count, "error") %> prohibited this flashlight from being saved:</h2>
@@ -31,6 +31,16 @@
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
+
+  <div class="field">
+    <%= f.file_field :image%>
+  </div>
+
+  <div class="field">
+    <%= f.label :remote_image_url , "Or add a url"%><br/>
+    <%= f.text_field :remote_image_url%>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

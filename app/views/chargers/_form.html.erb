@@ -1,4 +1,4 @@
-<%= form_for(@charger) do |f| %>
+<%= form_for @charger , :html =>{:multipart => true} do |f| %>
   <% if @charger.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@charger.errors.count, "error") %> prohibited this charger from being saved:</h2>
@@ -27,6 +27,16 @@
     <%= f.label :features %><br>
     <%= f.text_area :features %>
   </div>
+
+ <div class="field">
+    <%= f.file_field :image%>
+  </div>
+
+  <div class="field">
+    <%= f.label :remote_image_url , "Or add a url"%><br/>
+    <%= f.text_field :remote_image_url%>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

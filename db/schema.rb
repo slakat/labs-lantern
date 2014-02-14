@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140213163819) do
+ActiveRecord::Schema.define(version: 20140214150347) do
 
   create_table "accessories", force: true do |t|
     t.string   "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140213163819) do
     t.string   "compatible"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image"
   end
 
   create_table "chargers", force: true do |t|
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 20140213163819) do
     t.text     "features"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image"
   end
 
   create_table "flashlights", force: true do |t|
@@ -42,6 +44,7 @@ ActiveRecord::Schema.define(version: 20140213163819) do
     t.datetime "updated_at"
     t.text     "features"
     t.text     "specifications"
+    t.string   "image"
   end
 
 end
