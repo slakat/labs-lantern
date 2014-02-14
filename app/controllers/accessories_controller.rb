@@ -69,6 +69,6 @@ class AccessoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def accessory_params
-      params.require(:accessory).permit(:name, :price, :description, :features, :compatible , :image)
+      params.require(:accessory).permit(:name, :price, :description, :features, :compatible , :image , :remote_image_url)
     end
 end
