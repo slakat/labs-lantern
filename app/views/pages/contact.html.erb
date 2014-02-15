@@ -3,15 +3,15 @@
             <%= raw negative_captcha(@captcha) %>
             <div>
                 <%= negative_label_tag @captcha,'name', 'Name' %>
-                <%= negative_text_field_tag @captcha,'name', nil, class: '', placeholder: 'Your Name' %>
+                <%= negative_text_field_tag @captcha,:name,  class: '', placeholder: 'Your Name' %>
             </div>
            <div >
                <%= negative_label_tag @captcha,'mail','mail' %>
-               <%= negative_email_field_tag @captcha,'mail', nil, class: '', placeholder: 'Your Email Address' %>
+               <%= negative_text_field_tag @captcha,:mail,  class: '', placeholder: 'Your Email Address' %>
            </div>
            <div >
                <%= negative_label_tag @captcha,'comments', 'Comments' %>
-               <%= negative_text_area_tag @captcha,'comments', nil , class: '', rows: 4,  placeholder: 'Comments...' %>
+               <%= negative_text_area_tag @captcha,:comments,  class: '', rows: 4,  placeholder: 'Comments...' %>
            </div>
            <%= submit_tag nil %>
  <% end %>

@@ -43,6 +43,10 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :development do
+  gem 'better_errors'
+  gem 'quiet_assets'
+end
 gem 'bootstrap-sass'
 
 gem 'carrierwave'

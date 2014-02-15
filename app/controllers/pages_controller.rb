@@ -1,15 +1,15 @@
 class PagesController < ApplicationController
-  before_filter :setup_negative_captcha, :only => [:contact]
+  before_filter :setup_negative_captcha, :only => [:contact , :send_mail]
 
   def contact
   end
 
   def send_mail
     if @captcha.valid?
-    name = params[@captcha.values.name]
-    mail = params[@captcha.values.mail]
-    body = params[@captcha.values.comments]
-    ContactMailer.contact_mail(name, mail, body).deliver
+    name = @captcha.values[:name]
+    mail = @captcha.values[:mail]
+    comments = @captcha.values[:comments]
+    ContactMailer.contact_mail(name, mail, comments).deliver
 
     redirect_to :controller => :pages, :action => :contact_succes , notice: 'Mensaje enviado'
     else
