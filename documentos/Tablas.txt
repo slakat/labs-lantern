@@ -1,3 +1,8 @@
 flashlight (name:string) price:integer serie:string lumens:integer description:text || features:text model:string specifications:text
 charger name:string price:integer description:text features:text
 accessory name:string price:integer description:text features:text compatible:string
+
+user username full_name role password_hash password_salt
+
+u = User.new(:username => "admin",:full_name => "admin",:role => "admin" , :password => 'admin')
+u.save
