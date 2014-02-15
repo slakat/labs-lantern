@@ -1,6 +1,6 @@
 class FlashlightsController < ApplicationController
   before_action :set_flashlight, only: [:show, :edit, :update, :destroy]
-
+  before_filter :except => [:show, :index , :index_serie] do  require_admin end
   def index_serie
     
     @flashlights=Flashlight.where(:serie=>params[:serie])

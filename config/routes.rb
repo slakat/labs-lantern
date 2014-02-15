@@ -1,9 +1,13 @@
 LinTac::Application.routes.draw do
+  get "logout" => "sessions#destroy", :as => "logout"
+  get "login" => "sessions#new", :as => "login"
   get "pages/contact"
   get "pages/companies"
   resources :accessories
 
   resources :chargers
+
+  resources :sessions
 
   match '/send_mail', to: 'pages#send_mail', via: 'post'
   match '/contact_succes', to: 'pages#contact_succes', via: 'get'
