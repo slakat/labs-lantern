@@ -1,5 +1,6 @@
 class ChargersController < ApplicationController
   before_action :set_charger, only: [:show, :edit, :update, :destroy]
+  before_filter :except => [:show, :index ] do  require_admin end
 
   # GET /chargers
   # GET /chargers.json

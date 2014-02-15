@@ -28,6 +28,7 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.1-x86-mingw32)
     bootstrap-sass (3.1.0.1)
       sass (~> 3.2)
     builder (3.1.4)
@@ -59,6 +60,9 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
+    negative_captcha (0.3.3)
+      actionpack
+      activesupport
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -122,6 +126,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  negative_captcha
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc

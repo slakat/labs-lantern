@@ -5,14 +5,8 @@ class FlashlightsController < ApplicationController
     
     @flashlights=Flashlight.where(:serie=>params[:serie])
     respond_to do |format|
-      format.html
-      {
-
-      }
-      format.js
-      {
-        
-      }
+      format.html{}
+      format.js{}
     end
   end
 
@@ -25,6 +19,10 @@ class FlashlightsController < ApplicationController
   # GET /flashlights/1
   # GET /flashlights/1.json
   def show
+    respond_to do |format|
+      format.html{}
+      format.js{}
+    end
   end
   
   # GET /flashlights/new

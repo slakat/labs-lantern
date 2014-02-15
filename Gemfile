@@ -48,3 +48,5 @@ gem 'bootstrap-sass'
 gem 'carrierwave'
 
 gem 'bcrypt-ruby', '3.0.1'
+
+gem 'negative_captcha'

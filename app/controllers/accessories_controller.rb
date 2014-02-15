@@ -1,5 +1,6 @@
 class AccessoriesController < ApplicationController
   before_action :set_accessory, only: [:show, :edit, :update, :destroy]
+  before_filter :except => [:show, :index ] do  require_admin end
 
   # GET /accessories
   # GET /accessories.json

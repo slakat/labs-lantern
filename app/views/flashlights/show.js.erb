@@ -1,0 +1,4 @@
+var $producto=$("#frame");
+$producto.empty();
+
+$producto.append('<%= escape_javascript render partial: "frame", object: @flashlight %>');

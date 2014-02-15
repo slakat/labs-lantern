@@ -23,4 +23,5 @@
     <% otrosProd.each do |prod| %>
       <%= prod.price %>
       <%= image_tag prod.image_url.to_s %>
+      <%= link_to 'Show', prod , remote:true%>
     <% end %>

@@ -120,10 +120,9 @@
 </div>
   
 
-  <div id="inicial">
-  <%=render "inicial" %>
-</div>
+ 
 <div id="frame">
+  <%=render "inicial" %>
 </div>
 <div id="otrosProd">
 </div>
@@ -133,6 +132,7 @@
 </div>
 </div>
 
+<% if admin %>
 <div id="borrar">
 <h1>Listing flashlights</h1>
 
@@ -171,6 +171,7 @@
 
 <%= link_to 'New Flashlight', new_flashlight_path %>
 
-<%=link_to 'algo', :controller => "flashlights", :action => "index_serie", :serie => "tk" %>
+
 
 </div>
+<%end%>
