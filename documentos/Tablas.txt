@@ -4,5 +4,5 @@ accessory name:string price:integer description:text features:text compatible:st
 
 user username full_name role password_hash password_salt
 
-u = User.new(:username => "admin",:full_name => "admin",:role => "admin" , :password => 'admin')
+u = User.new({:username => "admin",:full_name => "admin",:role => "admin" , :password => 'admin' , :password_confirmation=>'admin'})
 u.save
