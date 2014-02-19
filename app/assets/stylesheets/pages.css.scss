@@ -8,13 +8,20 @@
 	background: rgba(255,255,255,.3);
 	position: relative;
 	margin: 10px auto;
-	width: 500px;
+	width: 80%;
+	max-width: 600px;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	text-align: center;
 	-moz-box-shadow:    3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc;
+
+  	-webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	-ms-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
 }
 
 .form-contact div{
@@ -25,21 +32,29 @@
 .form-contact input,textarea{
 	border-radius:10px;
 	border: rgba(255,255,255,.6);
-	width: 400px;
+	width: 80%;
 	resize: none;
+
 }
 
 .form-contact input:focus,textarea:focus{
 	border-radius:10px;
-	width: 400px;
-	background: $color2;
 	color: #fff;
 	outline: 0;
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  	border: 1px solid rgba(81, 203, 238, 1);
 } 
 
 .form-contact label{
 	display: block;
+	width: 30%;
 	float: left;
 	margin-bottom: 10px;
 	paddint-bottom:10px;
+}
+
+@media only screen and (max-width : 960px) {
+	.form-contact {
+		width: 300px;
+	}
 }
