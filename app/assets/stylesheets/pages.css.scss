@@ -2,10 +2,44 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "paleta";
 
 .form-contact{
-	margin:0 auto;
+	background: rgba(255,255,255,.3);
+	position: relative;
+	margin: 10px auto;
+	width: 500px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
 	-moz-box-shadow:    3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.form-contact div{
+	margin:0 auto;
+	padding:10px;
+}
+
+.form-contact input,textarea{
+	border-radius:10px;
+	border: rgba(255,255,255,.6);
+	width: 400px;
+	resize: none;
+}
+
+.form-contact input:focus,textarea:focus{
+	border-radius:10px;
+	width: 400px;
+	background: $color2;
+	color: #fff;
+	outline: 0;
+} 
+
+.form-contact label{
+	display: block;
+	float: left;
+	margin-bottom: 10px;
+	paddint-bottom:10px;
 }
