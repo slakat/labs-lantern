@@ -1,17 +1,19 @@
+<div class="form-contact">
 <%= form_tag(send_mail_path) do %>
 
             <%= raw negative_captcha(@captcha) %>
             <div>
-                <%= negative_label_tag @captcha,:name, 'Name' %>
-                <%= negative_text_field_tag @captcha,:name,  class: '', placeholder: 'Your Name' %>
+                <%= negative_label_tag @captcha,:name, 'Nombre' %>
+                <%= negative_text_field_tag @captcha,:name,  class: '', placeholder: 'Tu nombre' %>
             </div>
            <div >
                <%= negative_label_tag @captcha,:mail,'mail' %>
-               <%= negative_text_field_tag @captcha,:mail,  class: '', placeholder: 'Your Email Address' %>
+               <%= negative_text_field_tag @captcha,:mail,  class: '', placeholder: 'Tu Email' %>
            </div>
            <div >
-               <%= negative_label_tag @captcha,:comments, 'Comments' %>
-               <%= negative_text_area_tag @captcha,:comments,  class: '', rows: 4,  placeholder: 'Comments...' %>
+               <%= negative_label_tag @captcha,:comments, 'Comentarios' %>
+               <%= negative_text_area_tag @captcha,:comments,  class: '', rows: 4,  placeholder: 'Comentarios...' %>
            </div>
-           <%= submit_tag nil %>
+           <%= submit_tag nil, class: "button" %>
  <% end %>
+</div>
