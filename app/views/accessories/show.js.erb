@@ -7,4 +7,5 @@ $title.empty();
 $body.empty();
 
 $title.append('<%= escape_javascript @accessory.name %>');
-$body.append('<%= escape_javascript render @accessory.id , :locals=>{:accessory=>@accessory}%>');
+$body.append('<%= escape_javascript render partial: "accessory", object: @accessory %>');
+

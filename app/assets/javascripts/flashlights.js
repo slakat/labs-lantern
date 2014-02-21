@@ -1,22 +1,30 @@
 
 var activeHumano;
 	var activeSerie;
-	var mostrar;
+	
 
 function changeActive()
 {	
-	mostrar=$("#inicial")
-	$("#butonBike").on("click", bikePress1);
-	$("#butonBK").on("click", bikePress1);
-	$("#butonRecargables").on("click", bikePress2);
-	$("#butonRC").on("click", bikePress2);
-	$("#butonFrontales").on("click", bikePress3);
-	$("#butonHL").on("click", bikePress3);
+	var $normales=$(".botonHumano").find("img");
+	var $series=$(".botonSerie").find("a");
+
+	for (index = 0; index < $normales.length; ++index) {
+		var aux1=$($normales[index]);
+		var aux2=$($series[index]);
+		
+		
+    	LinkPress(aux1 , aux2);
+    	LinkPress(aux1 , aux2);
+	}
+	
+	
 	
 }
 
-function bikePress1()
+function LinkPress(hum , ser)
 {
+	function colorer(){
+
 	if(typeof(activeHumano) !== "undefined" && activeHumano !== null)
 	{
 		activeHumano.removeClass("active");
@@ -28,70 +36,18 @@ function bikePress1()
 		activeSerie=null;
 	}
 	
-	$("#butonBike").addClass("active");
-	activeHumano=$("#butonBike");
+	hum.addClass("active");
+	activeHumano=hum;
 
-	$("#butonBK").addClass("active");
-	activeSerie=$("#butonBK");
+	ser.addClass("active");
+	activeSerie=ser;
+	}
 
-	mostrar.toggle();
-	mostrar=$("#lBK");
-	mostrar.toggle();
-
+	hum.on("click" , colorer);
+	ser.on("click" , colorer);
 
 }
 
-function bikePress2()
-{
-	if(typeof(activeHumano) !== "undefined" && activeHumano !== null)
-	{
-		activeHumano.removeClass("active");
-		activeHumano=null;
-	}
-	if(typeof(activeSerie) !== "undefined" && activeSerie !== null)
-	{
-		activeSerie.removeClass("active");
-		activeSerie=null;
-	}
-	
-	$("#butonRecargables").addClass("active");
-	activeHumano=$("#butonRecargables");
-
-	$("#butonRC").addClass("active");
-	activeSerie=$("#butonRC");
-
-	mostrar.toggle();
-	mostrar=$("#lRC");
-	mostrar.toggle();
-
-
-}
-
-function bikePress3()
-{
-	if(typeof(activeHumano) !== "undefined" && activeHumano !== null)
-	{
-		activeHumano.removeClass("active");
-		activeHumano=null;
-	}
-	if(typeof(activeSerie) !== "undefined" && activeSerie !== null)
-	{
-		activeSerie.removeClass("active");
-		activeSerie=null;
-	}
-	
-	$("#butonFrontales").addClass("active");
-	activeHumano=$("#butonFrontales");
-
-	$("#butonHL").addClass("active");
-	activeSerie=$("#butonHL");
-
-	mostrar.toggle();
-	mostrar=$("#lHL");
-	mostrar.toggle();
-
-
-}
 
 $(changeActive);
 $(document).on('page:load',changeActive);
