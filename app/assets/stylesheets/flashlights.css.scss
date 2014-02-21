@@ -52,12 +52,14 @@
 {
 	margin-top: 30px;
 	margin-bottom: 30px;
-	width: 100%
+	width: 130%;
+	
 }
 .botonHumano img
 {
 	background-color: $color4;
 	border-radius: 100%;
+	padding: 5px;
 }
 .botonHumano img.active
 {
