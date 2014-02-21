@@ -46,8 +46,8 @@
  	<h1>Caso Mina San José</h1>
  	<p>Linternas Tácticas, en representación de FENIX hizo entrega de linternas LD20 a los 33 mineros.</p>
 
- 	<p class="col-md-2">
- 		<%= link_to (image_tag("content/ohoopee1.jpg" , class:"img-responsive fenix md-1" , alt:"Responsive image")), image_path("content/ohoopee1.jpg"), class: "group1", title:"Me and my grandfather on the Ohoopee." %></p>
+ 	<p class="col-md-2"> <%= link_to (image_tag("content/ohoopee1.jpg" , class:"img-responsive fenix md-1" , alt:"Responsive image")), image_path("content/ohoopee1.jpg"), class: "group1", title:"Me and my grandfather on the Ohoopee." %></p>
+ 		
  		
 
 
@@ -55,3 +55,9 @@
 
 
  </div>
+
+ <% @images = Dir.glob("app/assets/images/mineros/*.jpg") %>
+
+ <% @images.each do |image| %>
+   <%= image_tag "mineros/#{image.split('/').last}" %>
+ <% end %>
