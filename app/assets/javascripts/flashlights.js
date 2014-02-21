@@ -5,13 +5,14 @@ var activeHumano;
 
 function changeActive()
 {	
-	mostrar=$("#inicial")
-	$("#butonBike").on("click", bikePress1);
-	$("#butonBK").on("click", bikePress1);
-	$("#butonRecargables").on("click", bikePress2);
-	$("#butonRC").on("click", bikePress2);
-	$("#butonFrontales").on("click", bikePress3);
-	$("#butonHL").on("click", bikePress3);
+	var $normales=$(".botonHumano").find("img");
+	var $series=$("botonSerie").find("a");
+
+	for (index = 0; index < $normales.length-1; ++index) {
+    	console.log($normales[index]);
+	}
+	
+	
 	
 }
 
