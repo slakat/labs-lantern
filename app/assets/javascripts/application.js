@@ -24,3 +24,4 @@ $('#twitter').hover(
     function(){
       $(this).attr('src','assets/twitter_btn-01.png')
     }
+  );
