@@ -4,6 +4,9 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def about
+  end
+
   def send_mail
     if @captcha.valid?
     name = @captcha.values[:name]

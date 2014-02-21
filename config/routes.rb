@@ -3,6 +3,7 @@ LinTac::Application.routes.draw do
   get "login" => "sessions#new", :as => "login"
   get "pages/contact"
   get "pages/companies"
+  get "pages/about"
   resources :accessories
 
   resources :chargers

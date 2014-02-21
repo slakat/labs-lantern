@@ -27,6 +27,9 @@
 	max-width: 1300px;
 	width: auto;
 	margin: 0 auto;
+	-webkit-box-shadow: 6px 0 4px  -4px rgba(34, 34, 34, 0.24) , -6px 0 4px  -4px rgba(34, 34, 34, 0.24);   
+	-moz-box-shadow: 6px 0 4px  -4px rgba(34, 34, 34, 0.24) , -6px 0 4px  -4px rgba(34, 34, 34, 0.24);  
+	box-shadow: 6px 0 4px  -4px rgba(34, 34, 34, 0.24) , -6px 0 4px  -4px rgba(34, 34, 34, 0.24);
 
 }
 

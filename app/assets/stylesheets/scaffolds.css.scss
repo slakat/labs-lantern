@@ -8,7 +8,7 @@
 
 body {
   background: url("bg-white.jpg") $color3;
-  color: $color4;
+  color: $color1;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -31,6 +31,10 @@ background-image: linear-gradient(to left, #C0C1C2 75%, #FFFFFF 100%);
 
 }
 
+
+h1,h2,h3{
+  color:$color2;  
+}
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;

@@ -15,13 +15,6 @@
 //= require turbolinks
 //= require_tree .
 // Loads all Bootstrap javascripts
+
 //= require bootstrap
 
-$('#twitter').hover(
-    function(){
-      $(this).attr('src','assets/twitter_btn_h-01.png')
-    },
-    function(){
-      $(this).attr('src','assets/twitter_btn-01.png')
-    }
-  );
