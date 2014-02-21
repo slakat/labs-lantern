@@ -29,6 +29,7 @@
 	font-family:arial;
 	font-size:19px;
 	font-weight:bold;
+	margin-bottom:10px; 
 	
 	height:40px;
 	line-height:51px;
@@ -50,7 +51,7 @@
 }
 .botonHumano
 {
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-bottom: 30px;
 	width: 130%;
 	
@@ -75,7 +76,7 @@
 	border: 0px;
 	overflow: visible;
 	padding: 0px;
-	display:none;
+	
 
 }
 #mainFrame .row:first-child
@@ -118,16 +119,57 @@
 	width: auto;
 }
 
+#frame{
+	margin-left: 15%;
+	padding-left: 10px;
+	padding-right: 10px;
 
+}
 
+#frame .big {
+	display: block;
+}
 
-@media (max-width:500px){
-		#mainFrame .navbar
-	{
-		display:block;
-		width: 100%;
-	}
+#frame .big-info {
+	color: $color2;
+	text-align: justify;
+}
 
-	.botonHumano{display: none;}
-	.botonSerie{display: none;}
+#otrosProd{
+	margin-left: 20%;
+	overflow-y: scroll;
+	height: 150px;
+	margin-top: -100px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 5px solid whitesmoke;
+	display: none;
+}
+
+.lantern-mini{
+	margin-bottom: 10px;
+}
+
+.lantern-mini img.active{
+	border: 2px solid $color2;
+}
+
+#otrosProd::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#otrosProd::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#otrosProd::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }

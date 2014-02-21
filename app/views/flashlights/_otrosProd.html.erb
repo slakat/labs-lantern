@@ -20,8 +20,24 @@
            <p>Bonita linterna de capacidad</p>
       </div>
     </div>-->
+
+
     <% otrosProd.each do |prod| %>
-      <%= prod.price %>
-      <%= image_tag prod.image_url.to_s %>
-      <%= link_to 'Show', prod , remote:true%>
+
+    <div class="col-md-2 lantern-mini" >
+      <p><b>Precio: $<%= prod.price %></b></p>
+      <%= link_to (image_tag prod.image_url.to_s , class:"img-responsive fenix ", alt:"Responsive image"), prod , remote:true%>
+    </div>
+
     <% end %>
+
+    <% otrosProd.each do |prod| %>
+
+    <div class="col-md-2 lantern-mini" >
+      <p><b>Precio: $<%= prod.price %></b></p>
+      <%= link_to (image_tag prod.image_url.to_s , class:"img-responsive fenix ", alt:"Responsive image"), prod , remote:true%>
+    </div>
+
+    <% end %>
+
+  

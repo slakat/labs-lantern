@@ -1,5 +1,5 @@
 <!-- Circulos -->
-<div class="row botonHumano">
+<div class="row botonHumano visible-lg visible-md">
   <div class="col-md-1 col-md-offset-1">
       <img  src="assets/btn-bike-transparent-01.png" class="img-responsive  "  alt="Responsive image">
   </div>
@@ -34,7 +34,7 @@
 <!-- Cuadro central -->
 <div class="row">
   <!-- Series -->
-  <div class="col-md-2  botonSerie">
+  <div class="col-md-2 visible-lg visible-md botonSerie">
     <!-- Serie -->
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
@@ -86,8 +86,8 @@
     </div>
 
   </div>
-  <!-- Linterna actual -->
-  <div class="col-md-9" id="mainFrame">
+  <!-- nav -->
+  <div class="col-md-9 hidden-lg hidden-md" id="mainFrame">
     <div class="navbar navbar-inverse  " role="navigation">
          
             <div class="navbar-header">
@@ -117,12 +117,15 @@
 </div>
   
 
- 
-<div id="frame">
+
+
+<div id="frame" class="row">
   <%=render "inicial" %>
 </div>
-<div id="otrosProd">
+
+ <div id="otrosProd" class="row">
 </div>
+
 
 
   <!-- fin -->

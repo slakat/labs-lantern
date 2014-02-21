@@ -1,4 +1,5 @@
 var $otros=$("#otrosProd");
 $otros.empty();
 
+ $('#otrosProd').show();
 $otros.append('<%= escape_javascript render partial: "otrosProd", object: @flashlights %>');
