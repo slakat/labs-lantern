@@ -24,9 +24,20 @@ function changeActive()
 }
 
 function act(aux){
-	function colorer(){
 
-			alert("HJAJA");
+
+		var $products=$(".lantern-mini").find("img");
+
+		for (index = 0; index < $products.length; ++index) {
+			var aux=$($products[index]);
+			prodActive(aux);
+	    	
+		}
+
+}
+
+function prodActive(aux){
+		function colorer(){
 
 			if(typeof(activeProd) !== "undefined" && activeProd !== null)
 			{
@@ -62,14 +73,6 @@ function LinkPress(hum , ser)
 
 	ser.addClass("active");
 	activeSerie=ser;
-
-		var $products=$(".lantern-mini").find("img");
-
-		for (index = 0; index < $products.length; ++index) {
-			var aux=$($products[index]);
-			act(aux);
-	    	
-		}
 
 
 
