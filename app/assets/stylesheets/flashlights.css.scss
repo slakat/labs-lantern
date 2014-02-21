@@ -148,10 +148,15 @@
 
 #otrosProd .lantern-mini{
 	padding: 10px;
-}
+	}
 
 #otrosProd .lantern-mini img.active{
 	border: 2px solid $color2;
+	
+}
+#otrosProd .lantern-mini img{
+	border: 2px solid #fff;
+	
 }
 
 #otrosProd::-webkit-scrollbar-track
