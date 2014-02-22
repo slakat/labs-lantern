@@ -9,6 +9,6 @@ $(document).ajaxStart(function(){
 	$title.empty();
 	$body.empty();
 
-	$body.append('<div class="progress"><div>Loading…</div></div>');
+	$body.append('<div class="progress"></div>');
 
 });
