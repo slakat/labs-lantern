@@ -39,7 +39,7 @@
 
 .form-contact input:focus,textarea:focus{
 	border-radius:10px;
-	color: #fff;
+	color: #000;
 	outline: 0;
 	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   	border: 1px solid rgba(81, 203, 238, 1);
@@ -80,6 +80,33 @@
 	display: block;
 
 
+}
+
+#back{
+	background: url("c_1.jpg");
+	background-size: cover;
+	background-position-y: -100px;
+}
+
+#companies-head{
+	margin: 0 auto;
+	width: 70%;
+	font-size: 45px;
+	background: rgba(255,255,255,.5);
+}
+
+#companies-examples{
+	border: 1px solid $color2;
+}
+
+#companies-highlight{
+	background: rgba(0,0,0,.8);
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: justify;
+	
+	h1{color: $color4;  font-size: 30px; padding: 10px;}
 }
 
 @media only screen and (max-width : 960px) {
