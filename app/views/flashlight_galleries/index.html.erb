@@ -1,0 +1,29 @@
+<h1>Listing flashlight_galleries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Flashlight</th>
+      <th>Image</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @flashlight_galleries.each do |flashlight_gallery| %>
+      <tr>
+        <td><%= flashlight_gallery.flashlight_id %></td>
+        <td><%= flashlight_gallery.image %></td>
+        <td><%= link_to 'Show', flashlight_gallery %></td>
+        <td><%= link_to 'Edit', edit_flashlight_gallery_path(flashlight_gallery) %></td>
+        <td><%= link_to 'Destroy', flashlight_gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Flashlight gallery', new_flashlight_gallery_path %>
