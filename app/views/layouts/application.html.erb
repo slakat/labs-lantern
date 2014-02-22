@@ -45,10 +45,10 @@
             </div>
             <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-right">
-                      <li class="<%= 'active' if params[:controller] == 'home' %>"><%= link_to 'Home', root_path %></li>
-                      <li class="<%= 'active' if params[:controller] == 'flashlights' %>"> <%= link_to 'Linternas', flashlights_path %></li>
+                      <li class="<%= navMainAktiv('home')%>"><%= link_to 'Home', root_path %></li>
+                      <li class="<%= navMainAktiv('flashlights')%>"> <%= link_to 'Linternas', flashlights_path %></li>
                       
-        <li class="dropdown <%= 'active' if params[:controller] == 'accessories' or params[:controller] == 'chargers' %>">
+        <li class="dropdown <%= navMainAktiv('accessories')%> <%= navMainAktiv('chargers')%>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Otros Productos<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li> <%= link_to 'Accesorios', accessories_path %></li>
@@ -56,9 +56,9 @@
             
           </ul>
         </li>
-                       <li class="<%= 'active' if params[:action] == 'companies' %>"><%= link_to 'Empresas', :controller => :pages, :action => :companies %></li>
-                      <li class="<%= 'active' if params[:action] == 'about' %>"><%= link_to 'Nosotros', :controller => :pages, :action => :about %></li>          
-                      <li class="<%= 'active' if params[:action] == 'contact' %>"><%= link_to 'Contacto', :controller => :pages, :action => :contact %></li>                      
+                       <li class="<%= navMainAktiv('companies')%>"><%= link_to 'Empresas', :controller => :pages, :action => :companies %></li>
+                      <li class="<%= navMainAktiv('about')%>"><%= link_to 'Nosotros', :controller => :pages, :action => :about %></li>          
+                      <li class="<%= navMainAktiv('contact')%>"><%= link_to 'Contacto', :controller => :pages, :action => :contact %></li>                      
                     </ul>
             </div>
     </div>
