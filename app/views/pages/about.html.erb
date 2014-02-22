@@ -1,8 +1,33 @@
-<div class="row">
-<div id="horario" class="col-md col-sm-12">
-	<h1><b>Horario:</b></h1> <h3>Lunes a Viernes de 09:00 a 13:00 horas y de 14:00 a 19:30 horas.</h3>
-                <h3>Sábados de 10:00 a 13:30 horas.</h3>
-</div>
+	<div class="row">
+	<div id="horario" class="col-md-12 col-sm-12">
+		<h3><b>Horario:</b></h1> <h3>Lunes a Viernes de 09:00 a 13:00 horas y de 14:00 a 19:30 horas.</h3>
+	                <h4>Sábados de 10:00 a 13:30 horas.</h4>
+	     <div class="row">
+	     		<div  class="col-md-12 col-sm-12">
+
+	     			 <div id="press-photos" class="row">
+	 	<h3>Caso Mina San José</h3>
+	 	<p>Linternas Tácticas, en representación de FENIX hizo entrega de linternas LD20 a los 33 mineros.</p>
+
+
+
+	 		
+	 		 <% @images = Dir.glob("app/assets/images/mineros/700*.jpg") %>
+
+	 <% @images.each do |image| %>
+	   <p class="col-md-8"><b><%= link_to "Revisa la galería de imágenes aquí", (image_path "mineros/#{image.split('/').last}"), class: "group1", title: "Entrega de linternas LD20 a los 33 mineros." %></b></p>
+	 <% end %>
+
+
+
+
+
+	 </div>
+
+	     		</div>
+	     </div>
+
+	</div>
 
 
  <div id="map-canvas" class="col-md col-sm-12"></div>
@@ -37,22 +62,5 @@
 
 
 
- <div id="press-photos" class="row">
- 	<h1>Caso Mina San José</h1>
- 	<p>Linternas Tácticas, en representación de FENIX hizo entrega de linternas LD20 a los 33 mineros.</p>
-
-
-
- 		
- 		 <% @images = Dir.glob("app/assets/images/mineros/700*.jpg") %>
-
- <% @images.each do |image| %>
-   <p class="col-md-4"><b><%= link_to "Revisa la galería de imágenes aquí", (image_path "mineros/#{image.split('/').last}"), class: "group1", title: "Entrega de linternas LD20 a los 33 mineros." %></b></p>
- <% end %>
-
-
-
-
-
- </div>
+ 
 
