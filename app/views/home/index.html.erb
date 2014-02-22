@@ -55,9 +55,13 @@
 
 
              <div class="description col-md-4">
+
+              <div class="fb-like" data-href=<%=request.original_url%> data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
               <%= link_to 'Linternas',flashlights_path, id:"lantern", class: "button" %>
               <%= link_to 'Accesorios',flashlights_path, id:"lantern", class: "button" %>
               <%= link_to 'Pilas y Cargadores',flashlights_path, id:"lantern", class: "button" %>
+
+
 
              </div>   
 
@@ -137,3 +141,4 @@
     <%=render "flashlights/series"%>
     </div>
     -->
+    <div class="fb-comments" data-href=<%=request.original_url%> data-numposts="10" data-colorscheme="light"></div>
