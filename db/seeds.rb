@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-User.create(username:"admin",full_name: "admin",role:"admin" , password: 'admin' , password_confirmation:'admin')
+User.create(username:"admin",full_name: "admin",role:"admin" , password: 'admin' , password_confirmation:'admin', attempts:0)
 
 flashlight_list = [
   [ "61", "tk" ,100 , 100 , "The Fenix TK61 is scaled for extended operation in challenging conditions with max 1000 lumens output. Utilizing a single CREE XM-L2 U2 LED, the TK61 employs dual on-body switches for rapid shifting between four brightness levels and two flashing modes with runtime well beyond 4hrs on Turbo. The824mthrow reaches deep while an extended runtime kit stays the course whether the TK61 is handheld, shoulder-strap carried or vehicle-mounted","·Uses Cree XM-L2 LED with a lifespan of 50000 hour·Uses four 18650 rechargeable Li-ion batteries or eight 3V CR123A Lithium batteries·216mm (Length)﹡52.5mm (Diameter)﹡96mm(Head)·600-gram weight (excluding batteries)·Digitally regulated output - maintains constant brightness·Reverse polarity protection, to protect from improper battery installation·Dual switch system in the front, simple and fast operation·Made of durable aircraft-grade aluminum·Premium Type III hard-anodized anti-abrasive finish·Toughened ultra-clear glass lens with anti-reflective coating","lala","http://fenixlight.com/Uploads/photo/210201483232PM55645.jpg"],
@@ -25,5 +25,5 @@ accessory_list = [
   ]
 
 accessory_list.each do |name , price,  description , features , compatible , image|
-  Accessory.create( name:name, price:price,  description:description , features:features , compatible:compatible , remote_image_url:image)
+  Accessory.create( name:name, price:price,  description:description , features:features , compatible:compatible , remote_image_url:image )
 end
