@@ -13,7 +13,7 @@
 	padding: 10px;
 }
 
-div#press-photos p:nth-child(1n+9)
+div#press-photos p:nth-child(1n+4)
 {
     display: none;
 }
@@ -115,13 +115,13 @@ div#press-photos p:nth-child(1n+9)
 }
 
 #companies-highlight{
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,.7);
 	padding: 10px;
 	margin: 0 auto;
 	margin-top: 20px;
 	text-align: justify;
 	
-	h1{color: $color4;  font-size: 30px; padding: 10px;}
+	h1{color: $color5;  font-size: 30px; padding: 10px;}
 }
 
 @media only screen and (max-width : 960px) {
