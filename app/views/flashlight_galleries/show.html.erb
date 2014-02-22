@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Flashlight:</strong>
+  <%= @flashlight_gallery.flashlight_id %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @flashlight_gallery.image %>
+</p>
+
+<%= link_to 'Edit', edit_flashlight_gallery_path(@flashlight_gallery) %> |
+<%= link_to 'Back', flashlight_galleries_path %>
