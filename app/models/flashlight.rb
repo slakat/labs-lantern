@@ -1,5 +1,5 @@
 class Flashlight < ActiveRecord::Base
 
-	has_many :flashlight_galleries, dependent: :destroy , :through => :id
+	has_many :flashlight_galleries, dependent: :destroy 
 	mount_uploader :image , ImageUploader
 end

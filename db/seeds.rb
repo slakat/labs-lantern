@@ -27,3 +27,13 @@ accessory_list = [
 accessory_list.each do |name , price,  description , features , compatible , image|
   Accessory.create( name:name, price:price,  description:description , features:features , compatible:compatible , remote_image_url:image )
 end
+
+gallery_list = [
+  [1, "http://fenixlight.com/Uploads/photo/2112014113115PM41273.jpg"],
+  [1 ,"http://fenixlight.com/Uploads/photo/210201483230PM5158.jpg"],
+  [1 ,"http://fenixlight.com/Uploads/photo/210201483230PM80075.jpg"]
+  ]
+
+gallery_list.each do |id , image|
+  FlashlightGallery.create( flashlight_id:id, remote_image_url:image )
+end

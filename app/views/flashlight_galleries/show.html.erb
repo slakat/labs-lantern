@@ -6,8 +6,7 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @flashlight_gallery.image %>
+ <%= image_tag @flashlight_gallery.image_url.to_s %>
 </p>
 
 <%= link_to 'Edit', edit_flashlight_gallery_path(@flashlight_gallery) %> |
