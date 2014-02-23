@@ -4,8 +4,8 @@
        <p><b>Precio: $<%= frame.price%></b></p>
        <p><b>Galeria de Fotos</b></p>
        <% frame.flashlight_galleries.each do |image|%>
-       <p class="col-md-8"><b><%= link_to "Revisa la galería de imágenes aquí",  image_url( image.image_url.to_s ) , class: "group1", title: "Entrega de linternas LD20 a los 33 mineros." %></b></p>
-       <%end %>
+       <p class="col-md-8"><b><%= link_to "Revisa la galería de imágenes aquí",  (image_path (image.image_url.to_s )) , class: "group1  cboxElement", title: "#{frame.model}" %></b></p>
+       <% end %>
    </div>
 
    <div class="col-md-7 big-info">
@@ -19,8 +19,8 @@
 <div class="tab-content">
   <div class="tab-pane active" id="description"><%= frame.description%></div>
   <div class="tab-pane" id="features"><%= frame.features%></div>
-  <div class="tab-pane" id="messages"><div class="fb-comments" data-href=<%=request.original_url%> data-numposts="10" data-colorscheme="light"></div></div>
   <div class="tab-pane" id="specifications"><%= frame.specifications%></div>
+  <div class="tab-pane" id="messages"><div class="fb-comments" data-href=<%=request.original_url%> data-numposts="10" data-colorscheme="light"></div></div>
 </div>
        
 </div>

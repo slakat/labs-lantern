@@ -11,7 +11,6 @@ class AccessoriesController < ApplicationController
   # GET /accessories/1
   # GET /accessories/1.json
   def show
-    sleep 10
     respond_to do |format|
       format.html{}
       format.js{}

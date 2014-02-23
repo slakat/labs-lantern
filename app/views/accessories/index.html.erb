@@ -18,16 +18,19 @@
   </div>
 </div>
 
+<div class="index-accessories-panel">
 
 <% @accessories.each do |accessory| %>
+<div class="index-item">
+  <a class="group1" href="https://31.media.tumblr.com/3d9d0a8336df5a105dddc24f68a6f715/tumblr_mxj5dhZUvu1qa0p47o1_500.jpg" alt="<%= accessory.name %>" title="<%= accessory.name %>" ><img src="http://placehold.it/160x200"></a>
+  <p><%= accessory.name %></p>
+  <p>Precio: <%= accessory.price %></p>
+  <td><%= link_to 'Información', accessory ,class:"btn btn-primary btn-lg show-more" , :data =>{:toggle=>"modal" , :target=>"#myModal"}, remote:true%></td>
+</div>
 
-<%= accessory.name %>
-<%= accessory.price %>
-<%= accessory.description %>
-<td><%= link_to 'Show', accessory ,class:"btn btn-primary btn-lg" , :data =>{:toggle=>"modal" , :target=>"#myModal"}, remote:true%></td>
 <% end  %>
 
-
+</div>
 
 <% if admin %>
 
