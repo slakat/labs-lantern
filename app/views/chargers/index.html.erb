@@ -16,6 +16,20 @@
   </div>
 </div>
 
+<div class="index-accessories-panel">
+
+<% @chargers.each do |charger| %>
+<div class="index-item">
+  <a class="group1" href="https://31.media.tumblr.com/3d9d0a8336df5a105dddc24f68a6f715/tumblr_mxj5dhZUvu1qa0p47o1_500.jpg" alt="<%= charger.name %>" title="<%= charger.name %>" ><img src="http://placehold.it/160x200"></a>
+  <p><%= charger.name %></p>
+  <p>Precio: <%= charger.price %></p>
+  <td><%= link_to 'Información', charger ,class:"btn btn-primary btn-lg show-more" , :data =>{:toggle=>"modal" , :target=>"#myModal"}, remote:true%></td>
+</div>
+
+<% end  %>
+
+</div>
+
 
 
 <% if admin %>
