@@ -50,6 +50,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 //colorbox
 
 $(document).ready(function(){
-				//Examples of how to assign the Colorbox event to elements
 				$(".group1").colorbox({rel:'group1'});
+
+
+        $("#frame").on('click',function(e){
+             e.preventDefault();
+             $(".group1").colorbox({rel:'group1'});
+        });
+
 			});

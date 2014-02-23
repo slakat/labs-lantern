@@ -2,10 +2,11 @@
    <div class="col-md-4 big">
        <%= image_tag frame.image_url.to_s, class:"img-responsive fenix ", alt:"Responsive image" %>
        <p><b>Precio: $<%= frame.price%></b></p>
-       <p><b>Galeria de Fotos</b></p>
+       
        <% frame.flashlight_galleries.each do |image|%>
-       <p class="col-md-8"><b><%= link_to "Revisa la galería de imágenes aquí",  (image_path (image.image_url.to_s )) , class: "group1  cboxElement", title: "#{frame.model}" %></b></p>
+       <p class="col-md-8 photos"><b><%= link_to "Galeria de Fotos",  (image_path (image.image_url.to_s )) , class: "group1", title: "#{frame.model}" %></b></p>
        <% end %>
+
    </div>
 
    <div class="col-md-7 big-info">
@@ -13,12 +14,12 @@
  <ul class="nav nav-tabs">
   <li class="active"><a href="#description" data-toggle="tab">Descripcion</a></li>
   <li><a href="#features" data-toggle="tab">Caracteristicas</a></li>
-  <li><a href="#messages" data-toggle="tab">Comentarios</a></li>
   <li><a href="#specifications" data-toggle="tab">Especificaciones</a></li>
+  <li><a href="#messages" data-toggle="tab">Comentarios</a></li>
 </ul>
 <div class="tab-content">
   <div class="tab-pane active" id="description"><%= frame.description%></div>
-  <div class="tab-pane" id="features"><%= frame.features%></div>
+  <div class="tab-pane" id="features"><%= frame.features%> </div>
   <div class="tab-pane" id="specifications"><%= frame.specifications%></div>
   <div class="tab-pane" id="messages"><div class="fb-comments" data-href=<%=request.original_url%> data-numposts="10" data-colorscheme="light"></div></div>
 </div>
