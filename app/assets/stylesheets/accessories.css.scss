@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "paleta";
+
 
 .index-accessories-panel{
 		margin-top: 5px;
@@ -42,4 +44,38 @@
 	}
 
 
+}
+
+.modal{
+
+	text-align: justify;
+	
+	.description{
+		background: $color2;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+		color: $color5;
+		
+	}
+
+	.price{
+		float: right;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.name{
+		float: left;
+		font-size: 20px;
+		font-weight: bold;
+
+	}
+
+	.compatible{
+		border: 2px solid $color3;
+		padding: 10px;
+		border-radius: 10px;
+	}
 }
