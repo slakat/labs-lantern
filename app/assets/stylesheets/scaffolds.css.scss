@@ -97,5 +97,12 @@ div {
 
 .navbar-header {
     float: left;
-    width: 400px;
+    width: 300px;
+}
+
+@media only screen and (max-width : 500px) {
+.navbar-header img{
+   display: none;
+}
+
 }
