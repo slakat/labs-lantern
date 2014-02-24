@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("bg-white.jpg") $color3;
+  background: asset-url("bg-white.jpg") $color3;
   color: $color1;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;

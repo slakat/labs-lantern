@@ -41,7 +41,7 @@
 
 .footer
 {
-	background: url("bg-gray.jpg");
+	background: asset-url("bg-gray.jpg");
 	padding-top: 5px;
     height: 100px;
     bottom: 0px;
@@ -63,33 +63,33 @@
 }
 
 .logos #twitter a:hover{
-	background-image: url('twitter_btn_h-01.png');
+	background-image: asset-url('twitter_btn_h-01.png');
 }
 
 .logos #twitter a{
-	background-image: url('twitter_btn-01.png');
+	background-image: asset-url('twitter_btn-01.png');
 	padding: 10px 40px 40px 20px;
 	float: left;
 	margin-top: 10px;
 }
 
 .logos #facebook a:hover{
-	background-image: url('facebook_btn_h-01.png');
+	background-image: asset-url('facebook_btn_h-01.png');
 }
 
 .logos #facebook a{
-	background-image: url('facebook_btn-01.png');
+	background-image: asset-url('facebook_btn-01.png');
 	padding: 10px 40px 45px 20px;
 	float: left;
 	margin-top: 10px;
 }
 
 .logos #sport a:hover{
-	background-image: url('jagd_logo_h-01.png');
+	background-image: asset-url('jagd_logo_h-01.png');
 }
 
 .logos #sport a{
-	background-image: url('jagd_logo-01.png');
+	background-image: asset-url('jagd_logo-01.png');
 	padding: 10px 108px 50px 20px;
 	float: left;
 	margin-top: 10px;
