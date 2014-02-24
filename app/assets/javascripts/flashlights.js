@@ -1,6 +1,6 @@
 
 var activeHumano;
-	var activeSerie;
+var activeSerie;
 var activeProd;
 	
 
@@ -87,3 +87,40 @@ function LinkPress(hum , ser)
 
 $(changeActive);
 $(document).on('page:load',changeActive);
+
+document.onkeydown = keyH;
+
+function keyH(e)
+{
+	 e = e || window.event;
+	 if(e.keyCode == '37' || e.keyCode == '39')
+	 {
+	 var $prod=$(".lantern-mini").find("a");
+	 var indice=$prod.index($prod.find(".active").parent());
+
+    if (e.keyCode == '37') {
+
+        
+        if(indice>0)
+        {
+        	$($prod[indice]).find("img").removeClass("active");
+        	var aux=$($prod[indice-1]);
+        	aux.find("img").addClass("active");
+        	aux.click();
+
+        }
+    }
+    else if (e.keyCode == '39') {
+
+        if(indice<$prod.length-1)
+        {
+        	$($prod[indice]).find("img").removeClass("active");
+        	var aux=$($prod[indice+1]);
+        	aux.find("img").addClass("active");
+        	aux.click();
+
+        }
+    }
+	}
+
+}
