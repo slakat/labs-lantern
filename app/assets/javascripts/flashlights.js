@@ -19,7 +19,6 @@ function changeActive()
 	}
 
 
-
 	
 }
 
@@ -47,6 +46,10 @@ function prodActive(aux){
 			
 			aux.addClass("active");
 			activeProd=aux;
+
+			if (document.documentElement.clientWidth < 900) {
+				$('body, #frame').animate({ scrollTop: 0 }, 'slow');
+			}
 			
 		}
 
@@ -88,6 +91,7 @@ function LinkPress(hum , ser)
 $(changeActive);
 $(document).on('page:load',changeActive);
 
+
 document.onkeydown = keyH;
 
 function keyH(e)
@@ -124,3 +128,4 @@ function keyH(e)
 	}
 
 }
+

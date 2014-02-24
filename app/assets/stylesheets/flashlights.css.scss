@@ -195,3 +195,27 @@ div.big p:nth-child(1n+4)
     display: none;
     border: 1px solid red;
 }
+
+@media only screen and (max-width : 900px) {
+
+	#frame{
+		margin: 0 auto;
+		margin-left: 15%;
+		padding-left: 10px;
+		padding-right: 10px;
+		height: 330px;
+		
+
+}
+
+	#otrosProd{
+		argin: 0 auto;
+			margin-top: 250px;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 5px solid whitesmoke;
+			display: none;
+			height: auto; 
+	}
+
+}
