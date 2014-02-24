@@ -97,7 +97,7 @@ div#press-photos p:nth-child(1n+4)
 }
 
 #back{
-	background: asset-url("c_1.jpg");
+	background-image: asset-url("c_1.jpg");
 	background-size: cover;
 	background-position-y: -100px;
 	border-radius: 10px;
