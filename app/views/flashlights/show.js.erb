@@ -1,4 +1,20 @@
+if (document.documentElement.clientWidth < 900) {
+	var $title=$("#modalTitle");
+	var $body=$("#modalContent");
+
+
+
+	$title.empty();
+	$body.empty();
+
+	$title.append('<%= escape_javascript @flashlight.serie+" "+@flashlight.model %>');
+	$body.append('<%= escape_javascript render partial: "moreInfo", object: @flashlight %>');
+}
+else
+{
+
 var $producto=$("#frame");
 $producto.empty();
 
 $producto.append('<%= escape_javascript render partial: "frame", object: @flashlight %>');
+}

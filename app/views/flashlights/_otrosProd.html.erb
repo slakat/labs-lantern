@@ -32,6 +32,7 @@
       <p>Modelo: <%= prod.model %></p>
       <p>Max Lumens: <%= prod.lumens %></p>
       <p>Precio: $<%= prod.price %></p>
+      <td><%= link_to 'Información', prod ,class:"btn btn-primary btn-lg show-more visible-xs" , :data =>{:toggle=>"modal" , :target=>"#myModal"}, remote:true%></td>
     </div>
 
 
