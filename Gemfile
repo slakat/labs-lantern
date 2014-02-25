@@ -1,10 +1,31 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+group :development do
+  gem 'better_errors'
+  gem 'quiet_assets'
+  # Use sqlite3 as the database for Active Record
+	gem 'sqlite3'
+end
+gem 'bootstrap-sass'
+
+gem 'carrierwave'
+
+gem 'bcrypt-ruby', '3.0.1'
+
+gem 'negative_captcha'
+
+
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -13,7 +34,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+#gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -43,14 +64,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-group :development do
-  gem 'better_errors'
-  gem 'quiet_assets'
-end
-gem 'bootstrap-sass'
-
-gem 'carrierwave'
-
-gem 'bcrypt-ruby', '3.0.1'
-
-gem 'negative_captcha'
