@@ -13,10 +13,14 @@
 
 	 		
 	 		 <% @images = Dir.glob("app/assets/images/mineros/700*.jpg") %>
+	 		 <div id="links">
+	 		 	 <% @images.each do |image| %>
+	 		 	 <%= link_to "Revisa la galería de imágenes aquí", (image_path "mineros/#{image.split('/').last}"), title: "Entrega de linternas LD20 a los 33 mineros." %>
+	 		 	 <% end %>
+    
+			</div>
 
-	 <% @images.each do |image| %>
-	   <p class="col-md-8"><b><%= link_to "Revisa la galería de imágenes aquí", (image_path "mineros/#{image.split('/').last}"), class: "group1", title: "Entrega de linternas LD20 a los 33 mineros." %></b></p>
-	 <% end %>
+	 
 
 
 
@@ -62,5 +66,14 @@
 
 
 
- 
+ <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
 

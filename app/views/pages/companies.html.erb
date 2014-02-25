@@ -8,16 +8,15 @@
 
 
 	<div id="links">
-		<%= link_to (image_tag("companies_1.jpg"  , alt:"Nada")), image_path("companies_1.jpg"), title:"Linternas para Entel" %>
-		<%= link_to (image_tag("companies_2.jpg"  , alt:"Nada2")), image_path("companies_2.jpg"), title:"Linternas para Entel" %>
+		<div id="companies-examples" class=" col-md-4">
+		<%= link_to (image_tag("companies_1.jpg" , class:"img-responsive fenix md-1" ,  alt:"Responsive image")), image_path("companies_1.jpg"), class: "group1", title:"Linternas para Entel" %>
+		</div>
+		<div id="companies-examples" class=" col-md-7">
+		<%= link_to (image_tag("companies_2.jpg" , class:"img-responsive fenix md-1" , alt:"Responsive image")), image_path("companies_2.jpg"), class: "group1", title:"Linternas para Entel" %>
+	</div>
     	
 	</div>
-	<div id="companies-examples" class=" col-md-4">
-	<%= link_to (image_tag("companies_1.jpg" , class:"img-responsive fenix md-1" , alt:"Responsive image")), image_path("companies_1.jpg"), class: "group1", title:"Linternas para Entel" %>
-	</div>
-	<div id="companies-examples" class="col-md-7">
-	<%= link_to (image_tag("companies_2.jpg" , class:"img-responsive fenix md-1" , alt:"Responsive image")), image_path("companies_2.jpg"), class: "group1", title:"'Linternas regaladas a los '33 Mineros'" %>
-	</div>
+	
 	<div class="row">
 	<div  class="col-md-12  ">
 	<p>Logotipos de empresa, frases, fechas de eventos; todo lo que necesites.</p>
