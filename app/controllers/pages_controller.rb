@@ -1,11 +1,14 @@
 class PagesController < ApplicationController
-  before_filter :setup_negative_captcha, :only => [:contact , :send_mail]
+  before_filter :setup_negative_captcha, :only => [:about , :send_mail]
 
   def contact
   end
 
   def about
   end
+
+  def fenix
+  end 
 
   def send_mail
     if @captcha.valid?
@@ -16,7 +19,7 @@ class PagesController < ApplicationController
 
     redirect_to :controller => :pages, :action => :contact_succes , notice: 'Mensaje enviado'
     else
-      redirect_to :controller => :pages, :action => :contact , notice: 'Mensaje no enviado'
+      redirect_to :controller => :pages, :action => :about , notice: 'Mensaje no enviado'
     end
 
   end

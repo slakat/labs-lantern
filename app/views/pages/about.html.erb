@@ -2,6 +2,7 @@
 	<div id="horario" class="col-md-12 col-sm-12">
 		<h3><b>Horario:</b></h1> <h3>Lunes a Viernes de 09:00 a 13:00 horas y de 14:00 a 19:30 horas.</h3>
 	                <h4>Sábados de 10:00 a 13:30 horas.</h4>
+	                <p>T: (56-2) 2583 0333 - 2583 0334 - 2341 1712</p><p>Móvil: 09-9820 2149</p>
 	     <div class="row">
 	     		<div  class="col-md-12 col-sm-12">
 
@@ -33,34 +34,25 @@
  <div id="map-canvas" class="col-md col-sm-12"></div>
 
 </div>
-<div id="info-contact">
-<h2>Conceptos de diseño Fénix</h2>
 
-<p>Las personas siempre se impresionan por el fantástico rendimiento y versatilidad de los productos Fenix, que siempre siguen el concepto de diseño orientado al cliente. Fenix no se preocupa solo de las ideas de los consumidores, si no que además nos enorgullece al poder tenerlos. Cada modelo es una combinación de LED de clase mundial, el diseño óptico único de Fenix y un sistema de circuitos de corriente continua:</p>
-<ul>
-	<li>Diseño óptico excelente, logrando que el rayo de las linternas Fenix sea una mezcla de luz de largo alcance y suave iluminación con una combinación perfecta de los puntos de luz y el foco.</li>
-	
-	<li>Extraordinario sistema de circuitos de corriente continua que permiten que la iluminación de las linternas Fenix sea constante, sin irse oscureciendo en la medida en que se agotan las pilas.</li>
-	
-	<li>La más alta eficiencia eléctrica, que permite darle el mejor uso a la energía limitada de pilas por la excelente combinación de alto brillo y larga duración.</li>
-	
-	<li>LED de clase mundial, logrando una combinación perfecta de durabilidad y vida útil.</li>
-	
-	<li>Circuito inteligente de regulación digital, que entrega diversos modos y variantes de salida de luz para tener distintos tipos de iluminación.</li>
-	
-	<li>Sistema altamente eficiente de disipación del calor, asegurando la confiabilidad y eficiencia de nuestros productos.</li>
-	
-	<li>Lentes con capa anti reflejo, ultra claros y resistentes para una transmisión altamente eficiente de la luz.</li>
-	
-	<li>Impermeabilización IPX-8 y anodizado duro Tipo III, haciendo que las linternas Fenix sean resistentes al agua, durables y resistentes al rayado</li>
-</ul>
-<p>Al apegarse al concepto “El cliente es la fuente de diseño”, Fenix ha creado milagros, uno por uno, en la industria de las linternas con innovación continua.</p>
+<div class="form-contact">
+<%= form_tag(send_mail_path) do %>
 
-
-
+            <%= raw negative_captcha(@captcha) %>
+            <div>
+                <%= negative_label_tag @captcha,:name, 'Nombre' %>
+                <%= negative_text_field_tag @captcha,:name,  class: '', placeholder: 'Tu nombre' %>
+            </div>
+           <div >
+               <%= negative_label_tag @captcha,:mail,'mail' %>
+               <%= negative_text_field_tag @captcha,:mail,  class: '', placeholder: 'Tu Email' %>
+           </div>
+           <div >
+               <%= negative_label_tag @captcha,:comments, 'Comentarios' %>
+               <%= negative_text_area_tag @captcha,:comments,  class: '', rows: 4,  placeholder: 'Comments...' %>
+           </div>
+           <%= submit_tag nil, class: "button" %>
+ <% end %>
 </div>
-
-
-
  
 

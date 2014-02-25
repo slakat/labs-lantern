@@ -6,6 +6,7 @@ LinTac::Application.routes.draw do
   get "pages/contact"
   get "pages/companies"
   get "pages/about"
+  get "pages/fenix"
   resources :accessories
 
   resources :chargers
