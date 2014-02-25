@@ -190,11 +190,6 @@
 	background-color: #555;
 }
 
-div.big p:nth-child(1n+4)
-{
-    display: none;
-    border: 1px solid red;
-}
 
 @media only screen and (max-width : 900px) {
 

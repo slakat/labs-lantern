@@ -13,10 +13,7 @@
 	padding: 10px;
 }
 
-div#press-photos p:nth-child(1n+4)
-{
-    display: none;
-}
+
 
 .form-contact{
 	background: rgba(255,255,255,.3);
@@ -135,4 +132,10 @@ div#press-photos p:nth-child(1n+4)
 		width: 300px;
 	}
 }
+
+p{
+	text-align: justify;
+}
+
+
 
