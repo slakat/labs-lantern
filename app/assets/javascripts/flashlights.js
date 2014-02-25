@@ -47,9 +47,6 @@ function prodActive(aux){
 			aux.addClass("active");
 			activeProd=aux;
 
-			if (document.documentElement.clientWidth < 900) {
-				$('body, #frame').animate({ scrollTop: 0 }, 'slow');
-			}
 			
 		}
 
