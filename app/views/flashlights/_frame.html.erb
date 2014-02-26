@@ -3,9 +3,14 @@
        <%= image_tag frame.image_url.to_s, class:"img-responsive fenix ", alt:"Responsive image" %>
        <p><b>Precio: $<%= frame.price%></b></p>
        
-       <% frame.flashlight_galleries.each do |image|%>
-       <p class="col-md-8 photos"><b><%= link_to "Galeria de Fotos",  (image_path (image.image_url.to_s )) , class: "group1", title: "#{frame.model}" %></b></p>
-       <% end %>
+
+       <div id="links" class="ocultarLinks">
+         <% frame.flashlight_galleries.each do |image| %>
+          <%= link_to "Galeria de Fotos",  (image_path (image.image_url.to_s )) , title: "#{frame.serie} #{frame.model}" %>
+         <% end %>
+   
+      </div>
+
 
    </div>
 
@@ -25,3 +30,25 @@
 </div>
        
 </div>
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"> </ol>
+</div>
+
+
+
+ <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>

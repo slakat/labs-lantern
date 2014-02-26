@@ -16,11 +16,11 @@
 	 		 <% @images = Dir.glob("app/assets/images/mineros/700*.jpg") %>
 
 
-	 		 
 
-	 		 <div id="links">
+
+	 		 <div id="links" class="ocultarLinks">
 	 		 	 <% @images.each do |image| %>
-	 		 	  <%= link_to (image_tag("mineros/#{image.split('/').last}", class:"img-responsive fenix md-1" ,  alt:"Responsive image")), image_path("mineros/#{image.split('/').last}"), title:"Entrega de linternas LD20 a los 33 mineros." %>
+	 		 	  <%= link_to "Ver Galeria de fotos", image_path("mineros/#{image.split('/').last}"), title:"Entrega de linternas LD20 a los 33 mineros." %>
 	 		 	 <% end %>
    
 			</div>
@@ -70,8 +70,14 @@
     <a class="next">›</a>
     <a class="close">×</a>
     <a class="play-pause"></a>
-    <ol class="indicator"></ol>
+    <ol class="indicator">
+    	<% for i in 0..@images.length %>
+    		<li  data-index=<%= i%> style="background-image: url(http://farm6.static.flickr.com/5522/12766436774_434d61425b_s.jpg);"></li>
+    	<% end %>
+
+    </ol>
 </div>
+
 
 
  <script>
