@@ -1,0 +1,25 @@
+<%= form_for @accessory_gallery, :html =>{:multipart => true} do |f| %>
+  <% if @accessory_gallery.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@accessory_gallery.errors.count, "error") %> prohibited this accessory_gallery from being saved:</h2>
+
+      <ul>
+      <% @accessory_gallery.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :accessory_id %><br>
+    <%= f.number_field :accessory_id %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

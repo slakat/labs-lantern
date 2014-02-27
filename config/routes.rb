@@ -1,4 +1,8 @@
 LinTac::Application.routes.draw do
+  resources :charger_galleries
+
+  resources :accessory_galleries
+
   resources :flashlight_galleries
 
   get "logout" => "sessions#destroy", :as => "logout"
