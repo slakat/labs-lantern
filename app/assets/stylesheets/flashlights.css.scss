@@ -204,13 +204,29 @@
 }
 
 	#otrosProd{
-		argin: 0 auto;
-			margin-top: 250px;
+		margin: 0 auto;
+			margin-top: 0;
 			padding: 10px;
 			margin-bottom: 20px;
 			border: 5px solid whitesmoke;
 			display: none;
 			height: auto; 
+			overflow-y: hidden;
+	}
+
+	.lantern-mini {
+			.show-more{
+			display: block;
+			margin: 0 auto;
+			width: 150px;
+			background: $color2;
+			border: none;
+
+		}
+		.show-more:hover{
+			background: $color6;
+		}
+
 	}
 
 	.botonhumano img{

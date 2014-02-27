@@ -1,45 +1,47 @@
 	<div class="row">
-	<div id="horario" class="col-md-12 col-sm-12">
-		<h3><b>Horario:</b></h1> <h3>Lunes a Viernes de 09:00 a 13:00 horas y de 14:00 a 19:30 horas.</h3>
-	                <h4>Sábados de 10:00 a 13:30 horas.</h4>
-	                <p>T: (56-2) 2583 0333 - 2583 0334 - 2341 1712</p><p>Móvil: 09-9820 2149</p>
-	     <div class="row">
-	     		<div  class="col-md-12 col-sm-12">
 
-	     			 <div id="press-photos" class="row">
-	 	<h3>Caso Mina San José</h3>
-	 	<p>Linternas Tácticas, en representación de FENIX hizo entrega de linternas LD20 a los 33 mineros.</p>
+ <div id="map-canvas" class="col-xs-12 col-sm-12 col-md-5 col-lg-5" ></div>
 
+	<div id="horario" class="col-xs-12 col-sm-12 col-md-5 col-lg-5" >
+  		<h3><b>Horario:</b></h1> <h3>Lunes a Viernes de 09:00 a 13:00 horas y de 14:00 a 19:30 horas.</h3>
+  	                <h4>Sábados de 10:00 a 13:30 horas.</h4>
+  	                <p>T: (56-2) 2583 0333 - 2583 0334 - 2341 1712</p><p>Móvil: 09-9820 2149</p>
+  	     <div class="row">
+  	     		<div  >
 
-
-	 		
-	 		 <% @images = Dir.glob("app/assets/images/mineros/700*.jpg") %>
+  	     			 <div id="press-photos" class="row">
+  	 	<h3>Caso Mina San José</h3>
+  	 	<p>Linternas Tácticas, en representación de FENIX hizo entrega de linternas LD20 a los 33 mineros.</p>
 
 
 
-
-	 		 <div id="links" class="ocultarLinks">
-	 		 	 <% @images.each do |image| %>
-	 		 	  <%= link_to "Ver Galeria de fotos", image_path("mineros/#{image.split('/').last}"), title:"Entrega de linternas LD20 a los 33 mineros." %>
-	 		 	 <% end %>
-   
-			</div>
-
-	 
+  	 		
+  	 		 <% @images = Dir.glob("app/assets/images/mineros/700*.jpg") %>
 
 
 
 
+  	 		 <div id="links" class="ocultarLinks">
+  	 		 	 <% @images.each do |image| %>
+  	 		 	  <%= link_to "Ver Galeria de fotos", image_path("mineros/#{image.split('/').last}"), title:"Entrega de linternas LD20 a los 33 mineros." %>
+  	 		 	 <% end %>
+     
+  			</div>
 
-	 </div>
+  	 
 
-	     		</div>
-	     </div>
+
+
+
+
+  	 </div>
+
+  	     		</div>
+  	     </div>
 
 	</div>
 
 
- <div id="map-canvas" class="col-md col-sm-12"></div>
 
 </div>
 
