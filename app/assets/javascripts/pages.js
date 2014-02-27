@@ -45,5 +45,5 @@ function initialize() {
 	  }
 	}
 
-google.maps.event.addDomListener(window, 'load', initialize);
+$(document).on('page:load',initialize);
 
