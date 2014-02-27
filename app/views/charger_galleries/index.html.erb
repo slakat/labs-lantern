@@ -1,0 +1,29 @@
+<h1>Listing charger_galleries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Charger</th>
+      <th>Image</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @charger_galleries.each do |charger_gallery| %>
+      <tr>
+        <td><%= charger_gallery.charger_id %></td>
+        <td><%= charger_gallery.image %></td>
+        <td><%= link_to 'Show', charger_gallery %></td>
+        <td><%= link_to 'Edit', edit_charger_gallery_path(charger_gallery) %></td>
+        <td><%= link_to 'Destroy', charger_gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Charger gallery', new_charger_gallery_path %>

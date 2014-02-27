@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  accessory_id: 1
+  image: MyString
+
+two:
+  accessory_id: 1
+  image: MyString

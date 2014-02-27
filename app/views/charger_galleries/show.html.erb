@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Charger:</strong>
+  <%= @charger_gallery.charger_id %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @charger_gallery.image %>
+</p>
+
+<%= link_to 'Edit', edit_charger_gallery_path(@charger_gallery) %> |
+<%= link_to 'Back', charger_galleries_path %>

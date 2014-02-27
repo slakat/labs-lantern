@@ -1,0 +1,29 @@
+<h1>Listing accessory_galleries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Accessory</th>
+      <th>Image</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @accessory_galleries.each do |accessory_gallery| %>
+      <tr>
+        <td><%= accessory_gallery.accessory_id %></td>
+        <td><%= accessory_gallery.image %></td>
+        <td><%= link_to 'Show', accessory_gallery %></td>
+        <td><%= link_to 'Edit', edit_accessory_gallery_path(accessory_gallery) %></td>
+        <td><%= link_to 'Destroy', accessory_gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Accessory gallery', new_accessory_gallery_path %>
