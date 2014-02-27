@@ -68,13 +68,51 @@ video de publicidad
   </div>
   <div class="tab-pane" id="resistencia"></div>
    <div class="tab-pane" id="mantencion">
-
-<%= video_tag("mal_funcionamiento.mp4", :controls => true) %>
+<div id="links">
+		<ul class="thumbnails">
+    <li class="span12 margin-bottom-0">
+        <a class="thumbnail center-all" href="http://i.imgur.com/mdqQTPT.jpg" style="max-height: 375px; width: 375px;" data-gallery>
+            <img src="http://i.imgur.com/mdqQTPT.jpg" class="main-image">
+        </a>
+    </li>
+</ul>
+<!-- other images / video -->
+<ul class="thumbnails"> 
+    <li class="span6">
+    	<%= link_to "Galeria de Fotos",  video_url("mal_funcionamiento.mp4"), title: "now now" %>
+        
+    </li>               
+</ul>
+	</div>
    </div>
 
-   <div class="tab-pane" id="manuales"></div>
+   <div class="tab-pane" id="manuales">
+<%= video_tag("mal_funcionamiento.mp4", :controls => true) %>
+   </div>
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"> </ol>
 </div>
 
 
+
+ <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+
+</script>
 
 

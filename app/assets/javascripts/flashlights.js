@@ -96,6 +96,8 @@ function keyH(e)
 	 e = e || window.event;
 	 if(e.keyCode == '37' || e.keyCode == '39')
 	 {
+
+	 e.preventDefault();
 	 var $prod=$(".lantern-mini").find("a");
 	 var indice=$prod.index($prod.find(".active").parent());
 
