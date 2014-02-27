@@ -112,7 +112,27 @@ document.getElementById('links').onclick = function (event) {
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 };
-
+blueimp.Gallery([ 
+     
+        {
+            title: 'KN1GHT - Last Moon',
+            href: 'http://i.imgur.com/mdqQTPT.jpg'          
+        },
+        {
+            title: 'LES TWINS - An Industry Ahead',
+            href: 'http://www.youtube.com/watch?v=zv9jHNwaV2E',
+            type: 'text/html',
+            youtube: 'zv9jHNwaV2E',
+            poster: 'http://img.youtube.com/vi/zv9jHNwaV2E/0.jpg'
+        },
+        {
+            title: 'Test',
+            href: 'http://www.team-bhp.com/forum/attachments/shifting-gears/1033178d1356977973-official-non-auto-image-thread-_mg_0143.jpg'            
+        }
+    ], {
+        container: '#blueimp-gallery'
+        
+    });
 </script>
 
 
