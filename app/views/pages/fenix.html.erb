@@ -37,7 +37,7 @@ video de publicidad
   <div class="tab-pane" id="leds">
 
   	<h2>Historia de los Leds</h2>
-  	
+  	<pre>
   	<p>Fue en 1962 cuando se desarrolló el primer LED que se comercializó. Nick Holonyak, Jr. lo inventó mientras trabajaba como científico asesor en un laboratorio de General Electric en Syracuse , Nueva York. El resultado surgió de la combinación de arsénico, galio y fósforo (GsAsP) por lo que el color del LED fue rojo, emitiendo una frecuencia aproximada de 650nm. No tenía gran intensidad, pero fue el comienzo.</p>
 
 	<p>Poco tiempo después, se consiguió una mayor frecuencia de emisión al combinar el galio con el fósforo (GaP).</p>
@@ -63,10 +63,38 @@ video de publicidad
 	<p>Hoy podemos encontrar diversas técnicas de producción para luz azul: basada en el SiC Silicio – Carbono, otra en base al GaN Galio – Nitrógeno, otra en InGaN Indio-Galio-Nitrógeno sobre substrato de Zafiro y una GaN en base a sustrato SiC. El compuesto GaN, inventado por Nakamura, es el más utilizado ya que tiene un bajo rendimiento de conversión y una elevada degradación con la temperatura.</p>
 
 	<p>Como el azul es color primario, junto al verde y al rojo, se puede formar el blanco combinando los tres y la gama de colores completa del espectro. Gracias a esto es posible la existencia de gigantografías luminosas y grandes displays.</p>
-
+  </pre>
 
   </div>
-  <div class="tab-pane" id="resistencia"></div>
+  <div class="tab-pane" id="resistencia">
+    <div class="row">
+    <ul class="nav nav-pills nav-stacked col-md-2">
+    <li class="active"><a href="#vid1" data-toggle="tab">Congelada</a></li>
+    <li><a href="#vid2" data-toggle="tab">Microondas</a></li>
+    <li><a href="#vid3" data-toggle="tab">Aplastada</a></li>
+    <li><a href="#vid4" data-toggle="tab">Nose</a></li>
+    <li><a href="#vid5" data-toggle="tab">Algo con p3d</a></li>
+    </ul>
+    <div class="tab-content col-md-10">
+    <div id="vid1" class="tab-pane active">
+      <%= video_tag("abuso_congelada.mp4", :controls => true) %>
+    </div>
+    <div id="vid2" class="tab-pane">
+      <%= video_tag("abuso_microondas.mp4", :controls => true) %>
+    </div>
+    <div id="vid3" class="tab-pane">
+      <%= video_tag("aplastada.mp4", :controls => true) %>
+    </div>
+    <div id="vid4" class="tab-pane">
+      <%= video_tag("secuencia_01_small.mp4", :controls => true) %>
+    </div>
+     <div id="vid5" class="tab-pane">
+      <%= video_tag("fenix_P3D.mp4", :controls => true) %>
+    </div>
+    </div>
+  </div>
+
+  </div>
    <div class="tab-pane" id="mantencion">
    </div>
 
@@ -77,28 +105,6 @@ video de publicidad
    </div>
 </div>
 
-<div id="blueimp-gallery" class="blueimp-gallery">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"> </ol>
-</div>
 
-
-
- <script>
-document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-};
-
-</script>
 
 
