@@ -1,3 +1,8 @@
+var $frame=$("#frame");
+$frame.empty();
+
+$frame.append('<%= escape_javascript render partial: "inicial", object: @serie %>');
+
 var $otros=$("#otrosProd");
 $otros.empty();
 

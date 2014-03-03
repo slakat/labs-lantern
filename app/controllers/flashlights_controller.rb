@@ -4,6 +4,7 @@ class FlashlightsController < ApplicationController
   def index_serie
     
     @flashlights=Flashlight.where(:serie=>params[:serie])
+    @serie= params[:serie]
     respond_to do |format|
       format.html{redirect_to "index"}
       format.js{}
