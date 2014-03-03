@@ -4,6 +4,7 @@
   <li><a href="#resistencia" data-toggle="tab">Pruebas de Resistencia</a></li>
   <li><a href="#mantencion" data-toggle="tab">Mantención</a></li>
   <li><a href="#revision" data-toggle="tab">Revision</a></li>
+  <li><a href="#publicidad" data-toggle="tab">Publicidad</a></li>
   <li><a href="#manuales" data-toggle="tab">Manuales y Catálogos</a></li>
 </ul>
 <div class="tab-content">
@@ -124,14 +125,12 @@ video de publicidad
     <li><a href="#vid10" data-toggle="tab">Fenix LD20</a></li>
     <li><a href="#vid11" data-toggle="tab">Fenix TK21</a></li>
     <li><a href="#vid12" data-toggle="tab">Fenix TK45</a></li>
-    <li><a href="#vid13" data-toggle="tab">Fenix TK45</a></li>
-    <li><a href="#vid14" data-toggle="tab">Fenix TK45</a></li>
-    <li><a href="#vid15" data-toggle="tab">Fenix TK45</a></li>
-    <li><a href="#vid16" data-toggle="tab">Fenix TK45</a></li>
-    <li><a href="#vid17" data-toggle="tab">Fenix TK45</a></li>
-    <li><a href="#vid18" data-toggle="tab">Fenix TK45</a></li>
-    <li><a href="#vid19" data-toggle="tab">Fenix TK45</a></li>
-    <li><a href="#vid20" data-toggle="tab">Fenix TK45</a></li>
+    <li><a href="#vid13" data-toggle="tab">Fenix TK70</a></li>
+    <li><a href="#vid14" data-toggle="tab">HeadBand</a></li>
+    <li><a href="#vid15" data-toggle="tab">Fenix L1D</a></li>
+    <li><a href="#vid16" data-toggle="tab">Fenix P3D</a></li>
+    <li><a href="#vid17" data-toggle="tab">Fenix P3d v/s TK10</a></li>
+    
     
     </ul>
     <div class="tab-content col-md-10">
@@ -157,23 +156,15 @@ video de publicidad
       <%= video_tag("headband.mp4", :controls => true) %>
     </div>
     <div id="vid15" class="tab-pane">
-      <%= video_tag("Fenix_TK45.mp4", :controls => true) %>
+      <%= video_tag("L1D.mp4", :controls => true) %>
     </div>
     <div id="vid16" class="tab-pane">
-      <%= video_tag("Fenix_TK45.mp4", :controls => true) %>
+      <%= video_tag("P3D.mp4", :controls => true) %>
     </div>
     <div id="vid17" class="tab-pane">
-      <%= video_tag("Fenix_TK45.mp4", :controls => true) %>
+      <%= video_tag("P3D_vs_TK10.mp4", :controls => true) %>
     </div>
-    <div id="vid18" class="tab-pane">
-      <%= video_tag("Fenix_TK45.mp4", :controls => true) %>
-    </div>
-    <div id="vid19" class="tab-pane">
-      <%= video_tag("Fenix_TK45.mp4", :controls => true) %>
-    </div>
-    <div id="vid20" class="tab-pane">
-      <%= video_tag("Fenix_TK45.mp4", :controls => true) %>
-    </div>
+    
 
    
     
@@ -182,10 +173,33 @@ video de publicidad
 
   </div>
    
+<div class="tab-pane" id="publicidad">
+    <div class="row">
+    <ul class="nav nav-pills nav-stacked col-md-2">
+    <li class="active"><a href="#vid18" data-toggle="tab">1 corto</a></li>
+    <li><a href="#vid19" data-toggle="tab">2 Corto</a></li>
+    <li><a href="#vid20" data-toggle="tab">3 Corto</a></li>
+    
+    </ul>
+    <div class="tab-content col-md-10">
+    <div id="vid18" class="tab-pane active">
+      <%= video_tag("Fenix_01.mp4", :controls => true) %>
+    </div>
+    <div id="vid19" class="tab-pane">
+      <%= video_tag("FenixMovieEnglish.mp4", :controls => true) %>
+    </div>
+    <div id="vid20" class="tab-pane">
+      <%= video_tag("Fenix_Flashlight_Tactical_Operation_TV.mp4", :controls => true) %>
+    </div>
+   
+    
+    </div>
+  </div>
 
+  </div>
    <div class="tab-pane" id="manuales">
 
-<%= video_tag("mal_funcionamiento.mp4", :controls => true) %>
+
    
    </div>
 </div>
