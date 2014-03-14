@@ -13,12 +13,23 @@
 	margin-bottom: 10px;
 }
 
-.description{
+.description-like{
+	margin: 30px;
+
+}
+
+.desc{
+	font-family: 'Open Sans', sans-serif;
+	font-size: larger;
+	margin:10px;
+}
+
+.description.row{
 		margin: 0 auto;
 		top: 30px;
 }
 
-.description  a{
+.description.row  a{
 	margin-bottom: 20px;
 	margin-top: 20px;
 	font-size: 25px;

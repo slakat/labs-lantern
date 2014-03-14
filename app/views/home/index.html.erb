@@ -53,20 +53,39 @@
                 </div>
             </div>
 
+             <div class="description-like col-md-3">
+                
+                  <div class="fb-like" data-href=<%=request.original_url%> data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                
+              <div Class="row desc"
+                <p>Oficina-Tienda: Rengo 1015, Dpto 102-A, Ñuñoa.</p>
+                <p><b><abbr title="Telefono">T</abbr>: (56-2) 2583 0333 - 2583 0334 - 2341 1712 • Móvil: 09-9820 2149</b></p>
+                <p>Lunes a viernes 9:00 a 13:00 y de 14:00 a 19:30 hrs • Sábado de 10:00 a 13:30 hrs.</p>
+              </div>
 
-             <div class="description col-md-4">
+            </div>
 
-              <div class="fb-like" data-href=<%=request.original_url%> data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+  </div>
+
+
+            <div class="description row">
+
+              <div class="col-md-4"
               <%= link_to 'Linternas',flashlights_path, id:"lantern", class: "button" %>
+              </div>
+              <div class="col-md-4"
               <%= link_to 'Accesorios',flashlights_path, id:"lantern", class: "button" %>
+              </div>
+              <div class="col-md-4"
               <%= link_to 'Pilas y Cargadores',flashlights_path, id:"lantern", class: "button" %>
+              </div>
 
 
 
              </div>   
 
 
-  </div>
+
 
             <!--Destacados-->
             <div id="destacados" class="col-md-12">
