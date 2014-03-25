@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: linbd
+  database: lindb
   host: localhost
   encoding: UTF-8
   pool: 5
