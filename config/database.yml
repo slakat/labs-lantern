@@ -5,13 +5,13 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: linternastacticas
+  database: linbd
   host: localhost
-  encoding: unicode
+  encoding: UTF-8
   pool: 5
   timeout: 5000
-  username: ubuntu
-  passwotd:
+  username: lintact
+  passwotd: linpass
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
