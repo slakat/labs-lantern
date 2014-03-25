@@ -6,11 +6,12 @@
 development:
   adapter: postgresql
   database: linternastacticas
+  host: localhost
   encoding: unicode
   pool: 5
   timeout: 5000
   username: ubuntu
-  passwotd: lablin
+  passwotd:
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
